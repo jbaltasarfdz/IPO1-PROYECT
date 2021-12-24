@@ -13,3 +13,5 @@ C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenado
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\settingsWindow.g.cs
+C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\settingsWindow.baml
