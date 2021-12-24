@@ -14,7 +14,7 @@
             <RowDefinition Height="90"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-        <Label x:Name="lblVentanaAjustes" Content="Ajustes de la aplicación" Margin="329,25,331.6,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblVentanaAjustes" Content="Ajustes de la aplicación" Margin="329,25,323.6,0" VerticalAlignment="Top"/>
         <Label x:Name="lblIdioma" Content="Idioma" Margin="78,13.8,0,0" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Left"/>
         <ComboBox x:Name="cmbIdioma" HorizontalAlignment="Left" Margin="78,44.2,0,0" VerticalAlignment="Top" Width="182" Grid.Row="1"/>
         <Label Content="Color" HorizontalAlignment="Left" Margin="78,9.8,0,0" VerticalAlignment="Top" Grid.Row="2" RenderTransformOrigin="0.256,0.398"/>
