@@ -1,1 +1,1 @@
-Repositorio IPO 1
+Repositorio para el proyecto de IPO 1
