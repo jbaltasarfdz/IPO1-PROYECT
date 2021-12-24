@@ -24,5 +24,13 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            settingsWindow settingswindow = new settingsWindow();
+            settingswindow.Show();
+            
+        }
+
     }
 }
