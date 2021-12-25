@@ -30,7 +30,12 @@ namespace Proyecto
             settingsWindow settingswindow = new settingsWindow();
             settingswindow.Show();
             
+            
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
