@@ -17,12 +17,6 @@ namespace Proyecto
     /// <summary>
     /// Lógica de interacción para animalWindow.xaml
     /// </summary>
-    /// 
-    public class Animal:
-    {
-
-    }
-
     public partial class animalWindow : Window
     {
         public animalWindow()

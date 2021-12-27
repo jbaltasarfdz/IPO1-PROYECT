@@ -60,6 +60,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Animal.cs" />
     <Compile Include="animalWindow.xaml.cs">
       <DependentUpon>animalWindow.xaml</DependentUpon>
     </Compile>
@@ -69,6 +70,7 @@
     <Compile Include="userWindow.xaml.cs">
       <DependentUpon>userWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Page Include="animalWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
