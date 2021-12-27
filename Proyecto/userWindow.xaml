@@ -7,23 +7,14 @@
         mc:Ignorable="d"
         Title="Adopta un Amigo - Información del Usuario" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="181*"/>
-            <RowDefinition Height="184*"/>
-            <RowDefinition Height="60"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="138*"/>
-            <ColumnDefinition Width="655*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Nombre" Grid.Column="1" HorizontalAlignment="Left" Margin="59.6,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Apellidos" Grid.Column="1" HorizontalAlignment="Left" Margin="59.6,59,0,0" VerticalAlignment="Top"/>
-        <Label Content="Correo Electrónico" Grid.Column="1" HorizontalAlignment="Left" Margin="59.6,108,0,0" VerticalAlignment="Top"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="59.6,36,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="59.6,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="59.6,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487"/>
-        <Label Content="Listado de acciones" Grid.Column="1" HorizontalAlignment="Left" Margin="59.6,9.6,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="59.6,40.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="487"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="270,9,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellidos" HorizontalAlignment="Left" Margin="270,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Correo Electrónico" HorizontalAlignment="Left" Margin="270,127,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="270,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="270,99,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="270,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487"/>
+        <Label Content="Listado de acciones" HorizontalAlignment="Left" Margin="270,235,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="270,266,0,0" VerticalAlignment="Top" Width="487"/>
 
     </Grid>
 </Window>

@@ -60,9 +60,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="animalWindow.xaml.cs">
+      <DependentUpon>animalWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="settingsWindow.xaml.cs">
       <DependentUpon>settingsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="userWindow.xaml.cs">
+      <DependentUpon>userWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="animalWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +86,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="settingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
