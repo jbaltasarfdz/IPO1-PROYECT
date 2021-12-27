@@ -27,8 +27,8 @@ namespace Proyecto
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            settingsWindow settingswindow = new settingsWindow();
-            settingswindow.Show();
+            animalWindow animalwindow = new animalWindow();
+            animalwindow.Show();
             
             
         }
