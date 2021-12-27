@@ -50,3 +50,5 @@ C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.csproj
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.pdb
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\Proyecto.csproj.CopyComplete
