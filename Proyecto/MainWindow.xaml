@@ -7,6 +7,21 @@
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp" x:Class="Proyecto.MainWindow"
         mc:Ignorable="d"
         Title="Adopta un Amigo - Login" Height="500" Width="800" WindowState="Maximized" ResizeMode="CanResize" MinWidth="800" MinHeight="500" >
+    <Window.Resources>
+        <ControlTemplate x:Key="plantillaFeedbackError">
+        <Border BorderBrush="Red" BorderThickness="2">
+            <AdornedElementPlaceholder>
+                <TextBlock Text="{Binding [0].ErrorContent}"
+                               Foreground="Red"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Bottom"
+                               Margin="0,0,3,3"
+                               FontSize="7"/>
+            </AdornedElementPlaceholder>
+        </Border>
+    </ControlTemplate>
+    </Window.Resources>
+
     <Grid Margin="0,0,-0.4,0">
         <Grid.Background>
             <ImageBrush ImageSource="depositphotos_318003308-stock-illustration-silver-line-paw-print-icon.jpg"/>
@@ -15,8 +30,18 @@
         <Rectangle Fill="#FF010103" HorizontalAlignment="Stretch" Height="296" Margin="419,62,120,112.4" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Stretch" Width="255" Opacity="0.7" MinHeight="296" MinWidth="255"/>
         <Label Content="Inicia Sesión"  HorizontalAlignment="Stretch" Margin="432,78,237,357.4" VerticalAlignment="Stretch" Foreground="White" FontSize="18" FontFamily="Segoe UI Semibold" Height="35" Width="125" MinHeight="35" MinWidth="125"/>
         <Label Content="Usuario"  HorizontalAlignment="Stretch" Margin="443,113,298,329.4" VerticalAlignment="Stretch" Padding="3,5,5,5" Foreground="White" Height="28" Width="53" MinHeight="28" MinWidth="53"/>
-        <TextBox  HorizontalAlignment="Stretch" Height="31" Margin="443,142,172,297.4" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="179" SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" TextChanged="TextBox_TextChanged" MinHeight="31" MinWidth="179" ToolTip="Introduzca su usuario"/>
-        <TextBox  HorizontalAlignment="Stretch" Height="31" Margin="443,201,172,238.4" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="179" Background="#FF433B3B" Foreground="#FF888888" SelectionBrush="#FF888888" MinHeight="31" MinWidth="179" ToolTip="Introduzca su contraseña"/>
+        <TextBox x:Name="txtUsuario"  HorizontalAlignment="Stretch" Height="31" Margin="443,142,172,297.4" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="179" SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" TextChanged="TextBox_TextChanged" MinHeight="31" MinWidth="179" ToolTip="Introduzca su usuario" KeyDown="txtUsuario_KeyDown" Validation.ErrorTemplate="{StaticResource plantillaFeedbackError}">
+            <TextBox.Text>
+                <Binding Path="Usuario" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <local:ReglaRangoLongitudCaracteres
+                                        MinimoCaracteres="4"
+                                        MaximoCaracteres="4"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="txtContrasena"  HorizontalAlignment="Stretch" Height="31" Margin="443,201,172,238.4" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="179" Background="#FF433B3B" Foreground="#FF888888" SelectionBrush="#FF888888" MinHeight="31" MinWidth="179" ToolTip="Introduzca su contraseña"/>
         <Label Content="Contraseña"  HorizontalAlignment="Stretch" Margin="443,173,274,269.4" VerticalAlignment="Stretch" Foreground="White" Height="28" Width="77" MinHeight="28" MinWidth="77"/>
         <Button Content="Acceder"  HorizontalAlignment="Stretch" Margin="483,262,195,178.4" VerticalAlignment="Stretch" Width="116" Background="#FFCB0A0A" Foreground="White" FontFamily="Segoe UI Semibold" Height="30" MinHeight="30" MinWidth="116"/>
         <Rectangle Fill="Black" HorizontalAlignment="Stretch" Height="243" Margin="87,88,511,139.4" Stroke="Black" VerticalAlignment="Stretch" Width="196" Opacity="0.7" RadiusX="5" RadiusY="5"  MinHeight="243" MinWidth="196"/>
