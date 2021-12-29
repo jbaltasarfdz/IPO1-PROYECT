@@ -61,6 +61,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Animal.cs" />
+    <Compile Include="socioWindow.xaml.cs">
+      <DependentUpon>socioWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="voluntarioWindow.xaml.cs">
+      <DependentUpon>voluntarioWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="animalWindow.xaml.cs">
       <DependentUpon>animalWindow.xaml</DependentUpon>
     </Compile>
@@ -71,6 +77,14 @@
       <DependentUpon>userWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <Page Include="socioWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="voluntarioWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="animalWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
