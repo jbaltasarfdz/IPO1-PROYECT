@@ -57,3 +57,8 @@ C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenado
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.baml
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.baml
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.g.cs
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.g.cs
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.baml
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.baml

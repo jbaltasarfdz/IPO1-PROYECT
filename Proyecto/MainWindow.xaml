@@ -9,28 +9,77 @@
         Title="Adopta un Amigo - Login" Height="500" Width="800" WindowState="Maximized" ResizeMode="CanResize" MinWidth="800" MinHeight="500" >
     <Window.Resources>
         <ControlTemplate x:Key="plantillaFeedbackError">
-        <Border BorderBrush="Red" BorderThickness="2">
-            <AdornedElementPlaceholder>
-                <TextBlock Text="{Binding [0].ErrorContent}"
+            <Border BorderBrush="Red" BorderThickness="2">
+                <AdornedElementPlaceholder>
+                    <TextBlock Text="{Binding [0].ErrorContent}"
                                Foreground="Red"
                                HorizontalAlignment="Right"
                                VerticalAlignment="Bottom"
                                Margin="0,0,3,3"
                                FontSize="7"/>
-            </AdornedElementPlaceholder>
-        </Border>
-    </ControlTemplate>
+                </AdornedElementPlaceholder>
+            </Border>
+        </ControlTemplate>
     </Window.Resources>
 
     <Grid Margin="0,0,-0.4,0">
         <Grid.Background>
-            <ImageBrush ImageSource="depositphotos_318003308-stock-illustration-silver-line-paw-print-icon.jpg"/>
+            <ImageBrush ImageSource="Images/depositphotos_318003308-stock-illustration-silver-line-paw-print-icon.jpg"/>
         </Grid.Background>
 
-        <Rectangle Fill="#FF010103" HorizontalAlignment="Stretch" Height="296" Margin="419,62,120,112.4" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Stretch" Width="255" Opacity="0.7" MinHeight="296" MinWidth="255"/>
-        <Label Content="Inicia Sesión"  HorizontalAlignment="Stretch" Margin="432,78,237,357.4" VerticalAlignment="Stretch" Foreground="White" FontSize="18" FontFamily="Segoe UI Semibold" Height="35" Width="125" MinHeight="35" MinWidth="125"/>
-        <Label Content="Usuario"  HorizontalAlignment="Stretch" Margin="443,113,298,329.4" VerticalAlignment="Stretch" Padding="3,5,5,5" Foreground="White" Height="28" Width="53" MinHeight="28" MinWidth="53"/>
-        <TextBox x:Name="txtUsuario"  HorizontalAlignment="Stretch" Height="31" Margin="443,142,172,297.4" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="179" SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" TextChanged="TextBox_TextChanged" MinHeight="31" MinWidth="179" ToolTip="Introduzca su usuario" KeyDown="txtUsuario_KeyDown" Validation.ErrorTemplate="{StaticResource plantillaFeedbackError}">
+        <Rectangle Fill="#FF010103" 
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                   Height="296" Width="255" MinHeight="296" MinWidth="255"
+                   Margin="419,62,120,112.4" 
+                   Stroke="Black" Opacity="0.7" 
+                   RadiusY="5" RadiusX="5" 
+                   />
+
+        <Rectangle Fill="Black" 
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                   Height="243"  Width="196" MinHeight="243" MinWidth="196"
+                   Margin="87,88,511,139.4" 
+                   Stroke="Black"  Opacity="0.7" 
+                   RadiusX="5" RadiusY="5"  
+                   />
+
+        <Label Content="Contraseña"  
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+               Margin="443,173,274,269.4"  
+               Foreground="White" 
+               Height="28" Width="77" MinHeight="28" MinWidth="77"
+               />
+
+        <Label Content="Inicia Sesión"  
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+               Margin="432,78,237,357.4" 
+               Foreground="White" FontSize="18" FontFamily="Segoe UI Semibold" 
+               Height="35" Width="125" MinHeight="35" MinWidth="125"
+               />
+
+        <Label Content="Usuario"  
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+               Margin="443,113,298,329.4" 
+               Foreground="White" 
+               Height="28" Width="53" MinHeight="28" MinWidth="53"
+               />
+        
+        <Label Content="Adopta un Amigo" 
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+               Margin="108,258,527,178.4"  
+               Foreground="White" FontFamily="Segoe UI Semibold" FontSize="18"  
+               Height="34" Width="159" MinHeight="33" MinWidth="159"
+               TextOptions.TextHintingMode="Fixed"  
+               />
+        
+        <TextBox x:Name="txtUsuario"  
+                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                 Margin="443,142,172,297.4" 
+                 TextWrapping="Wrap" TextChanged="TextBox_TextChanged"
+                 SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" 
+                 Height="31" Width="179" MinHeight="31" MinWidth="179"  
+                 ToolTip="Introduzca su usuario" 
+                 KeyDown="txtUsuario_KeyDown" Validation.ErrorTemplate="{StaticResource plantillaFeedbackError}">
             <TextBox.Text>
                 <Binding Path="Usuario" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
@@ -41,17 +90,40 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <TextBox x:Name="txtContrasena"  HorizontalAlignment="Stretch" Height="31" Margin="443,201,172,238.4" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="179" Background="#FF433B3B" Foreground="#FF888888" SelectionBrush="#FF888888" MinHeight="31" MinWidth="179" ToolTip="Introduzca su contraseña"/>
-        <Label Content="Contraseña"  HorizontalAlignment="Stretch" Margin="443,173,274,269.4" VerticalAlignment="Stretch" Foreground="White" Height="28" Width="77" MinHeight="28" MinWidth="77"/>
-        <Button Content="Acceder"  HorizontalAlignment="Stretch" Margin="483,262,195,178.4" VerticalAlignment="Stretch" Width="116" Background="#FFCB0A0A" Foreground="White" FontFamily="Segoe UI Semibold" Height="30" MinHeight="30" MinWidth="116"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Stretch" Height="243" Margin="87,88,511,139.4" Stroke="Black" VerticalAlignment="Stretch" Width="196" Opacity="0.7" RadiusX="5" RadiusY="5"  MinHeight="243" MinWidth="196"/>
-        <Image HorizontalAlignment="Stretch" Height="116" Margin="128,123,550,231.4" VerticalAlignment="Stretch" Width="116" Source="OIP.jpg" MinHeight="116" MinWidth="116"/>
-        <Label Content="Adopta un Amigo" HorizontalAlignment="Stretch" Margin="108,258,527,178.4" VerticalAlignment="Stretch" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="18"  Height="34" Width="159" TextOptions.TextHintingMode="Fixed" MinHeight="33" MinWidth="159" />
-        <Button x:Name="Settings"  HorizontalAlignment="Right" Margin="739,10,10,415.4" VerticalAlignment="Top" Click="Button_Click"  Height="45" Width="45" MinHeight="44" MinWidth="44" ToolTip="Ajustes" >
+
+        <TextBox x:Name="txtContrasena"  
+                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                 Margin="443,201,172,238.4" 
+                 TextWrapping="Wrap" Text=""  
+                 Background="#FF433B3B" Foreground="#FF888888" SelectionBrush="#FF888888" 
+                 Height="31"  Width="179" MinHeight="31" MinWidth="179" 
+                 ToolTip="Introduzca su contraseña"
+                 />
+
+        <Button x:Name="btnLogin" Content="Acceder"  
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="483,262,195,178.4"  
+                Click="btnLogin_Click"
+                Background="#FFCB0A0A" Foreground="White" FontFamily="Segoe UI Semibold" 
+                Height="30" Width="116" MinHeight="30" MinWidth="116" 
+                
+                />
+
+        <Button x:Name="btnSettings"  
+                HorizontalAlignment="Right" VerticalAlignment="Top"
+                Margin="739,10,10,415.4"
+                Click="btnSettings_Click"
+                Height="45" Width="45" MinHeight="44" MinWidth="44" 
+                ToolTip="Ajustes"  >
             <Button.Background>
-                <ImageBrush ImageSource="settings.png" TileMode="FlipX" Stretch="Uniform"/>
+                <ImageBrush ImageSource="Images/settings.png" TileMode="FlipX" Stretch="Uniform"/>
             </Button.Background>
         </Button>
 
+        <Image Source="Images/OIP.jpg" 
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+               Margin="128,123,550,231.4"  
+               Height="116" Width="116" MinHeight="116" MinWidth="116"
+               />
     </Grid>
 </Window>

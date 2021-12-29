@@ -5,34 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto"
         mc:Ignorable="d"
-        Title="Adopta un Amigo - Animales" Height="450" Width="800">
+        Title="Adopta un Amigo - Animales" Height="720" Width="1080">
     <Grid>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="204,28,0,0" VerticalAlignment="Top" Width="55"/>
-        <Label Content="Sexo" HorizontalAlignment="Left" Margin="204,260,0,0" VerticalAlignment="Top"/>
-        <Label Content="Raza" HorizontalAlignment="Left" Margin="204,142,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tamaño" HorizontalAlignment="Left" Margin="400,90,0,0" VerticalAlignment="Top"/>
-        <Label Content="Edad" HorizontalAlignment="Left" Margin="400,28,0,0" VerticalAlignment="Top"/>
-        <Label Content="Fecha de entrada" HorizontalAlignment="Left" Margin="204,201,0,0" VerticalAlignment="Top"/>
-        <Label Content="Chip" HorizontalAlignment="Left" Margin="204,319,0,0" VerticalAlignment="Top"/>
-        <Label Content="PPP" HorizontalAlignment="Left" Margin="400,149,0,0" VerticalAlignment="Top"/>
-        <Label Content="Vacunado" HorizontalAlignment="Left" Margin="400,267,0,0" VerticalAlignment="Top"/>
-        <Label Content="Enfermedades" HorizontalAlignment="Left" Margin="400,208,0,0" VerticalAlignment="Top"/>
-        <Label Content="Descripción" HorizontalAlignment="Left" Margin="594,209,0,0" VerticalAlignment="Top"/>
-        <Label Content="Estado" HorizontalAlignment="Left" Margin="204,87,0,0" VerticalAlignment="Top"/>
-        <Button Content="Añadir animal" HorizontalAlignment="Left" Margin="594,72,0,0" VerticalAlignment="Top" Width="123" Height="31"/>
-        <Button Content="Editar información" HorizontalAlignment="Left" Margin="594,124,0,0" VerticalAlignment="Top" Width="123" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="204,59,0,0" TextWrapping="Wrap" Text="{Binding Nombre}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="204,118,0,0" TextWrapping="Wrap" Text="{Binding Estado}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="204,173,0,0" TextWrapping="Wrap" Text="{Binding Raza}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="204,232,0,0" TextWrapping="Wrap" Text="{Binding FechaEntrada}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="204,291,0,0" TextWrapping="Wrap" Text="{Binding Sexo}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="204,350,0,0" TextWrapping="Wrap" Text="{Binding Chip}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="400,54,0,0" TextWrapping="Wrap" Text="{Binding Edad}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="400,115,0,0" TextWrapping="Wrap" Text="{Binding Tamanio}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="400,180,0,0" TextWrapping="Wrap" Text="{Binding PPP}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="400,238,0,0" TextWrapping="Wrap" Text="{Binding Enfermedades}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="400,291,0,0" TextWrapping="Wrap" Text="{Binding Vacunado}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="594,235,0,0" TextWrapping="Wrap" Text="{Binding Descripcion}" VerticalAlignment="Top" Width="123"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/fondo.jpg"/>
+        </Grid.Background>
+        <Rectangle Fill="#FF373A34" 
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,29,25.6,10.4" RadiusY="5" RadiusX="5" Stroke="Black" Opacity="0.41"/>
+        <GroupBox Header="Descripción" Margin="517,302,55.6,97.4"  Width="501"/>
+        <GroupBox Header="Datos Principales"  Height="253" Margin="250,44,294.6,0" VerticalAlignment="Top" Width="529"/>
+        <GroupBox Header="Otros Datos" Height="364" Margin="38,302,596.6,24.4"  Width="440"/>
+
+        <Label Content="Nombre"  Margin="287,80,706.6,570.4"  Width="80" Height="40" FontSize="18"/>
+        <Label Content="Sexo"  Margin="272,333,750.6,317.4"  Height="40" Width="51"/>
+        <Label Content="Raza"  Margin="53,333,969.6,317.4"  Height="40" Width="51"/>
+        <Label Content="Tamaño" Margin="272,412,726.6,239.4" Height="39" Width="75"/>
+        <Label Content="Edad" Margin="53,411,966.6,239.4" Height="40" Width="54" RenderTransformOrigin="0.548,2.68" />
+        <Label Content="Fecha de entrada"  Margin="529,80,368.6,570.4" Height="40" Width="176"/>
+        <Label Content="Chip"  Margin="529,181,495.6,469.4" Height="40" Width="49" RenderTransformOrigin="0.52,0.463"/>
+        <Label Content="PPP"  Margin="53,573,975.6,78.4"  Height="39" Width="45"/>
+        <Label Content="Vacunado" Margin="272,494,709.6,156.4" Height="40" Width="92"/>
+        <Label Content="Enfermedades"  Margin="53,494,870.6,157.4" Height="39" Width="150"/>
+        <Label Content="Estado"  Margin="287,181,721.6,469.4"  Height="40" Width="65"/>
+        <Button Content="Añadir animal" HorizontalAlignment="Stretch" Margin="817,106,77.6,536.4" VerticalAlignment="Stretch" Width="179" Height="48" FontSize="16"/>
+        <Button Content="Editar información" HorizontalAlignment="Stretch" Margin="817,189,77.6,451.4" VerticalAlignment="Stretch" Width="179" Height="50" FontSize="16"/>
+        <TextBox  Height="35" Margin="303,119,595.6,536.4" TextWrapping="Wrap" Text="{Binding Nombre}"  Width="175"/>
+        <TextBox  Height="36" Margin="303,219,595.6,435.4" TextWrapping="Wrap" Text="{Binding Estado}"  Width="175" RenderTransformOrigin="0.747,0.413"/>
+        <TextBox  Height="35" Margin="66,374,832.6,281.4" TextWrapping="Wrap" Text="{Binding Raza}"  Width="175" RenderTransformOrigin="0.498,0.563"/>
+        <TextBox  Height="57" Margin="542,119,327.6,514.4" TextWrapping="Wrap" Text="{Binding FechaEntrada}"  Width="204"/>
+        <TextBox  Height="36" Margin="286,374,612.6,280.4" TextWrapping="Wrap" Text="{Binding Sexo}"  Width="175" Background="#7FFFFFFF"/>
+        <TextBox  Height="36" Margin="542,219,356.6,435.4" TextWrapping="Wrap" Text="{Binding Chip}"  Width="175"/>
+        <TextBox  Height="36" Margin="65,451,832.6,203.4" TextWrapping="Wrap" Text="{Binding Edad}"  Width="176"/>
+        <TextBox  Height="36" Margin="285,451,612.6,203.4" TextWrapping="Wrap" Text="{Binding Tamanio}"  Width="176"/>
+        <TextBox  Height="35" Margin="66,612,831.6,43.4" TextWrapping="Wrap" Text="{Binding PPP}"  Width="176"/>
+        <TextBox  Height="36" Margin="65,532,832.6,122.4" TextWrapping="Wrap" Text="{Binding Enfermedades}"  Width="176"/>
+        <TextBox  Height="36" Margin="285,532,612.6,122.4" TextWrapping="Wrap" Text="{Binding Vacunado}"  Width="176"/>
+        <TextBox  Height="221" Margin="542,347,77.6,122.4" TextWrapping="Wrap" Text="{Binding Descripcion}"  Width="454" RenderTransformOrigin="0.395,0.4"/>
+        <Image HorizontalAlignment="Stretch" Height="177" Margin="53,78,856.6,435.4" VerticalAlignment="Stretch" Width="164" Source="images.jpg" Stretch="UniformToFill"/>
+
+
 
     </Grid>
+
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#7FFFFFFF"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+        
+        <Style TargetType="GroupBox">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Background" Value="#66080707"/>
+            <Setter Property="BorderBrush" Value="#FFFC0000"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+    </Window.Resources>
 </Window>

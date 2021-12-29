@@ -29,12 +29,6 @@ namespace Proyecto
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            animalWindow animalwindow = new animalWindow();
-            animalwindow.Show();
-            
-        }
 
         /// Mover foco al pulsar enter
         private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
@@ -83,6 +77,18 @@ namespace Proyecto
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+            settingsWindow settingswindow = new settingsWindow();
+            settingswindow.Show();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            animalWindow animalwindow = new animalWindow();
+            animalwindow.Show();
         }
     }
 

@@ -124,16 +124,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imagen1.png" />
+    <Resource Include="Images\OIP.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="OIP.jpg" />
+    <Resource Include="Images\depositphotos_318003308-stock-illustration-silver-line-paw-print-icon.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="depositphotos_318003308-stock-illustration-silver-line-paw-print-icon.jpg" />
+    <Resource Include="Images\settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="settings.png" />
+    <Resource Include="Images\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
