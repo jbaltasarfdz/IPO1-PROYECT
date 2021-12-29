@@ -11,7 +11,7 @@ namespace Proyecto
         public string Nombre { set; get; }
         public string Estado { set; get; }
         public string Raza { set; get; }
-        public DateTime FechaEntrada { set; get; }
+        public string FechaEntrada = DateTime.Now.ToString("dd-MM-yyyy");
         public string Sexo { set; get; }
         public string Chip { set; get; }
         public int Edad { set; get; }
@@ -22,7 +22,7 @@ namespace Proyecto
         public string Descripcion { set; get; }
     
 
-        public Animal(string nombre, string estado, string raza, DateTime fechaEntrada, string sexo, string chip, int edad, string ppp, List<string> enfermedades, string vacunado, string descripcion)
+        public Animal(string nombre, string estado, string raza, string fechaEntrada, string sexo, string chip, int edad, string tamanio, string ppp, List<string> enfermedades, string vacunado, string descripcion)
         {
             Nombre = nombre;
             Estado = estado;
@@ -31,10 +31,12 @@ namespace Proyecto
             Sexo = sexo;
             Chip = chip;
             Edad = edad;
+            Tamanio = tamanio;
             PPP = ppp;
             this.Enfermedades = enfermedades;
             Vacunado = vacunado;
             Descripcion = descripcion;
         }
+
     }
 }
