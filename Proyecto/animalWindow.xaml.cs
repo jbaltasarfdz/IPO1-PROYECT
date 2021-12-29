@@ -19,7 +19,7 @@ namespace Proyecto
     /// </summary>
     public partial class animalWindow : Window
     {
-        private Animal animal1 = new Animal("Jesús","Apadrinado","Perro",DateTime.Now,"Macho","ABCD69",22,true,null,true,"Es él");
+        private Animal animal1 = new Animal("Jesús", "Apadrinado", "Perro", DateTime.Now, "Macho", "ABCD69", 22, "PPP",null,"Vacunado","Es él");
         public animalWindow()
         {
             InitializeComponent();

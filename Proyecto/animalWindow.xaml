@@ -29,18 +29,18 @@
         <Label Content="Estado"  Margin="287,181,721.6,469.4"  Height="40" Width="65"/>
         <Button Content="Añadir animal" HorizontalAlignment="Stretch" Margin="817,106,77.6,536.4" VerticalAlignment="Stretch" Width="179" Height="48" FontSize="16"/>
         <Button Content="Editar información" HorizontalAlignment="Stretch" Margin="817,189,77.6,451.4" VerticalAlignment="Stretch" Width="179" Height="50" FontSize="16"/>
-        <TextBox  Height="35" Margin="303,119,595.6,536.4" TextWrapping="Wrap" Text="{Binding Nombre}"  Width="175"/>
-        <TextBox  Height="36" Margin="303,219,595.6,435.4" TextWrapping="Wrap" Text="{Binding Estado}"  Width="175" RenderTransformOrigin="0.747,0.413"/>
-        <TextBox  Height="35" Margin="66,374,832.6,281.4" TextWrapping="Wrap" Text="{Binding Raza}"  Width="175" RenderTransformOrigin="0.498,0.563"/>
-        <TextBox  Height="57" Margin="542,119,327.6,514.4" TextWrapping="Wrap" Text="{Binding FechaEntrada}"  Width="204"/>
-        <TextBox  Height="36" Margin="286,374,612.6,280.4" TextWrapping="Wrap" Text="{Binding Sexo}"  Width="175" Background="#7FFFFFFF"/>
-        <TextBox  Height="36" Margin="542,219,356.6,435.4" TextWrapping="Wrap" Text="{Binding Chip}"  Width="175"/>
-        <TextBox  Height="36" Margin="65,451,832.6,203.4" TextWrapping="Wrap" Text="{Binding Edad}"  Width="176"/>
-        <TextBox  Height="36" Margin="285,451,612.6,203.4" TextWrapping="Wrap" Text="{Binding Tamanio}"  Width="176"/>
-        <TextBox  Height="35" Margin="66,612,831.6,43.4" TextWrapping="Wrap" Text="{Binding PPP}"  Width="176"/>
-        <TextBox  Height="36" Margin="65,532,832.6,122.4" TextWrapping="Wrap" Text="{Binding Enfermedades}"  Width="176"/>
-        <TextBox  Height="36" Margin="285,532,612.6,122.4" TextWrapping="Wrap" Text="{Binding Vacunado}"  Width="176"/>
-        <TextBox  Height="221" Margin="542,347,77.6,122.4" TextWrapping="Wrap" Text="{Binding Descripcion}"  Width="454" RenderTransformOrigin="0.395,0.4"/>
+        <TextBox  Height="35" Margin="303,119,595.6,536.4" TextWrapping="Wrap" Text="{Binding Nombre}"  Width="175" ToolTip="Introduzca el nombre del animal"/>
+        <TextBox  Height="36" Margin="303,219,595.6,435.4" TextWrapping="Wrap" Text="{Binding Estado}"  Width="175" RenderTransformOrigin="0.747,0.413" ToolTip="Introduzca el estado del animal" />
+        <TextBox  Height="35" Margin="66,374,832.6,281.4" TextWrapping="Wrap" Text="{Binding Raza}"  Width="175" RenderTransformOrigin="0.498,0.563" ToolTip="Introduzca la raza del animal" />
+        <TextBox  Height="57" Margin="542,119,327.6,514.4" TextWrapping="Wrap" Text="{Binding FechaEntrada}"  Width="204" ToolTip="Introduzca la fecha de entrada del animal" />
+        <TextBox  Height="36" Margin="286,374,612.6,280.4" TextWrapping="Wrap" Text="{Binding Sexo}"  Width="175" Background="#7FFFFFFF" ToolTip="Introduzca el sexo del animal" />
+        <TextBox  Height="36" Margin="542,219,356.6,435.4" TextWrapping="Wrap" Text="{Binding Chip}"  Width="175" ToolTip="Inroduzca el número de chip del animal" />
+        <TextBox  Height="36" Margin="65,451,832.6,203.4" TextWrapping="Wrap" Text="{Binding Edad}"  Width="176" ToolTip="Introduzca la edad del animal" />
+        <TextBox  Height="36" Margin="285,451,612.6,203.4" TextWrapping="Wrap" Text="{Binding Tamanio}"  Width="176" ToolTip="Introduzca el tamaño del animal" />
+        <TextBox  Height="35" Margin="66,612,831.6,43.4" TextWrapping="Wrap" Text="{Binding PPP}"  Width="176" ToolTip="Introduzca si es un animal PPP" />
+        <TextBox  Height="36" Margin="65,532,832.6,122.4" TextWrapping="Wrap" Text="{Binding Enfermedades}"  Width="176" ToolTip="Inntroduzca las enfermedades del animal" />
+        <TextBox  Height="36" Margin="285,532,612.6,122.4" TextWrapping="Wrap" Text="{Binding Vacunado}"  Width="176" ToolTip="Introduzca si está vacunado el animal" />
+        <TextBox  Height="221" Margin="542,347,77.6,122.4" TextWrapping="Wrap" Text="{Binding Descripcion}"  Width="454" RenderTransformOrigin="0.395,0.4" ToolTip="Introduzca una descripción del animal"/>
         <Image HorizontalAlignment="Stretch" Height="177" Margin="53,78,856.6,435.4" VerticalAlignment="Stretch" Width="164" Source="images.jpg" Stretch="UniformToFill"/>
 
 
