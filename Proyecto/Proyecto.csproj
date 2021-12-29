@@ -152,5 +152,8 @@
   <ItemGroup>
     <Resource Include="Images\images.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="xmlPerros.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

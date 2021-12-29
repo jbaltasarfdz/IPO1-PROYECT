@@ -17,13 +17,13 @@ namespace Proyecto
     /// <summary>
     /// Lógica de interacción para animalWindow.xaml
     /// </summary>
-    public partial class animalWindow : Window
+    public partial class voluntarioWindow : Window
     {
-        private Animal animal1 = new Animal("Jesús", "Apadrinado", "Perro", "29-12-2021", "Macho", "ABCD69", 22, "mediano",  "PPP", null, "Vacunado", "Es él");
-        public animalWindow()
+
+        public voluntarioWindow()
         {
             InitializeComponent();
-            DataContext = animal1;
+         
         }
 
     }   

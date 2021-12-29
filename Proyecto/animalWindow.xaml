@@ -189,7 +189,7 @@
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
             Margin="53,62,856.6,451.4"
             Height="177" Width="164" 
-            Source="Images/images.jpg" Stretch="UniformToFill"
+            Source="{Binding Imagen}" Stretch="UniformToFill"
             />
         
     </Grid>

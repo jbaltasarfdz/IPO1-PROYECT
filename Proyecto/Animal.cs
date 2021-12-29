@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace Proyecto
 {
@@ -20,9 +21,11 @@ namespace Proyecto
         public List<string> Enfermedades = new List<string>();
         public string Vacunado { set; get; }
         public string Descripcion { set; get; }
+        public Uri Imagen { set; get; }
+        public BitmapImage Foto {set; get; }
     
 
-        public Animal(string nombre, string estado, string raza, string fechaEntrada, string sexo, string chip, int edad, string tamanio, string ppp, List<string> enfermedades, string vacunado, string descripcion)
+        public Animal(string nombre, string estado, string raza, string fechaEntrada, string sexo, string chip, int edad, string tamanio, string ppp, List<string> enfermedades, string vacunado, string descripcion, Uri imagen)
         {
             Nombre = nombre;
             Estado = estado;
@@ -36,6 +39,7 @@ namespace Proyecto
             this.Enfermedades = enfermedades;
             Vacunado = vacunado;
             Descripcion = descripcion;
+            Imagen = imagen;
         }
 
     }

@@ -19,12 +19,17 @@ namespace Proyecto
     /// </summary>
     public partial class animalWindow : Window
     {
-        private Animal animal1 = new Animal("Jesús", "Apadrinado", "Perro", "29-12-2021", "Macho", "ABCD69", 22, "mediano",  "PPP", null, "Vacunado", "Es él");
+        static string relativePath = "Images/images.jpg";
+        private Animal animal1 = new Animal("Jesús", "Apadrinado", "Perro", "29-12-2021", "Macho", "ABCD69", 22, "mediano",  "PPP", null, "Vacunado", "Es él", new Uri(uriString: relativePath, UriKind.Relative));
         public animalWindow()
         {
             InitializeComponent();
             DataContext = animal1;
         }
 
-    }   
+        //private List<Perro> CargarListaPerros()
+        //{  C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\Images\
+
+        //}
+    }
 }
