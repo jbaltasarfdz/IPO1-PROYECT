@@ -14,7 +14,7 @@
     Enfermedades="Ninguna"
     Vacunado="Esta vacunado"
     Descripcion="Es un perro muy sociable"
-    Imagen = "Images/images.jpg"
+    Imagen = "/Perros/Perro1.jpg"
   />
 
   <Perro
@@ -30,7 +30,7 @@
     Enfermedades=" Ninguna"
     Vacunado=" Esta vacunado"
     Descripcion=" Es un perro timido pero muy cariñoso"
-    Imagen ="Images/images.jpg"
+    Imagen ="/Perros/Perro1.jpg"
   />
 
 </Perros>

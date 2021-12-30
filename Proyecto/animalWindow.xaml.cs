@@ -20,12 +20,18 @@ namespace Proyecto
     /// </summary>
     public partial class animalWindow : Window
     {
+        private List<Animal> listadoPerros;
         static string relativePath = "Images/images.jpg";
         private Animal animal1 = new Animal("Jesús", "Apadrinado", "Perro", "29-12-2021", "Macho", "ABCD69", 22, "mediano",  "PPP", "", "Vacunado", "Es él", new Uri(uriString: relativePath, UriKind.Relative));
         public animalWindow()
         {
             InitializeComponent();
-            DataContext = animal1;
+
+            listadoPerros = CargarListaPerros();
+
+            DataContext = listadoPerros;
+
+
         }
 
         private List<Animal> CargarListaPerros()
@@ -50,7 +56,7 @@ namespace Proyecto
                 newPerro.Vacunado = node.Attributes["Vacunado"].Value;
                 newPerro.Descripcion = node.Attributes["Descripcion"].Value;
                 newPerro.Imagen = new Uri(Environment.CurrentDirectory + node.Attributes["Imagen"].Value);
-                newPerro.Foto = new BitmapImage(newPerro.Imagen);
+                //newPerro.Foto = new BitmapImage(newPerro.Imagen);
 
                 listado.Add(newPerro);
             }
