@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Perros>
+  <Perro
+    Nombre ="Jesus"
+    Estado="Apadrinado"
+    Raza="Española"
+    FechaEntrada="11/3/2021"
+    Sexo="Macho"
+    Chip="039DS4"
+    Edad="5"
+    Tamanio="Grande"
+    PPP="No"
+    Enfermedades="Ninguna"
+    Vacunado="Esta vacunado"
+    Descripcion="Es un perro muy sociable"
+    Imagen = "Images/images.jpg"
+  />
+
+  <Perro
+    Nombre="Charli"
+    Estado=" Abandonado"
+    Raza=" Española"
+    FechaEntrada=" 19/10/2021"
+    Sexo=" Macho"
+    Chip ="039SJ7"
+    Edad=" 6"
+    Tamanio =" Mediano"
+    PPP=" No"
+    Enfermedades=" Ninguna"
+    Vacunado=" Esta vacunado"
+    Descripcion=" Es un perro timido pero muy cariñoso"
+    Imagen ="Images/images.jpg"
+  />
+
+</Perros>

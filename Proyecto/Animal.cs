@@ -18,14 +18,14 @@ namespace Proyecto
         public int Edad { set; get; }
         public string Tamanio { set; get; }
         public string PPP { set; get; }
-        public List<string> Enfermedades = new List<string>();
+        public string Enfermedades { set; get; }
         public string Vacunado { set; get; }
         public string Descripcion { set; get; }
         public Uri Imagen { set; get; }
         public BitmapImage Foto {set; get; }
     
 
-        public Animal(string nombre, string estado, string raza, string fechaEntrada, string sexo, string chip, int edad, string tamanio, string ppp, List<string> enfermedades, string vacunado, string descripcion, Uri imagen)
+        public Animal(string nombre, string estado, string raza, string fechaEntrada, string sexo, string chip, int edad, string tamanio, string ppp, string enfermedades, string vacunado, string descripcion, Uri imagen)
         {
             Nombre = nombre;
             Estado = estado;
@@ -36,7 +36,7 @@ namespace Proyecto
             Edad = edad;
             Tamanio = tamanio;
             PPP = ppp;
-            this.Enfermedades = enfermedades;
+            Enfermedades = enfermedades;
             Vacunado = vacunado;
             Descripcion = descripcion;
             Imagen = imagen;

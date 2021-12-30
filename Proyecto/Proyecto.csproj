@@ -153,7 +153,7 @@
     <Resource Include="Images\images.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="xmlPerros.xml" />
+    <Resource Include="Xmls\xmlPerros.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
