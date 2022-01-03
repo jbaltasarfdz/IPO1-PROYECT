@@ -1,0 +1,15 @@
+﻿
+
+<Voluntarios>
+  <Voluntario>
+    Nombre="Jesus"
+    Apellidos="Baltasar Fernández"
+    Sexo="Hombre"
+    ID="01234567A"
+    Edad="22"
+    Telefono="111222333"
+    Correo="JesusBF@correoprueba.es"
+    
+    Imagen="/Perros/Perro1.jpg"
+  </Voluntario>
+</Voluntarios>

@@ -1,0 +1,48 @@
+﻿
+
+<Socios>
+  <Socio>
+    Nombre="Jesus"
+    Apellidos="Baltasar Fernández"
+    Sexo="Hombre"
+    ID="01234567A"
+    Edad="22"
+    Telefono="111222333"
+    Correo="JesusBF@correoprueba.es"
+    Cuenta="ES00 1111 2222 3333 4444 5555"
+    Ayuda="30"
+    Pago="Mensual"
+    Tipo="Normal"
+    Imagen="/Perros/Perro1.jpg"
+  </Socio>
+
+  <Socio>
+    Nombre="Purina"
+    Apellidos="SA"
+    Sexo=""
+    ID="B00 1111 2222 3333 4444 5555 6666"
+    Edad=""
+    Telefono="999999999"
+    Correo="purina@enterprise.es"
+    Cuenta="ES01 1111 2222 3333 4444 5555"
+    Ayuda="12000"
+    Pago="Anual"
+    Tipo="Premium"
+    Imagen="/Perros/Perro1.jpg"
+  </Socio>
+
+  <Socio>
+    Nombre="Excmo. Ayuntamiento"
+    Apellidos="de Ciudad Real"
+    Sexo=""
+    ID="13001"
+    Edad=""
+    Telefono="926012345"
+    Correo="ayuntaCiu@diputacion.es"
+    Cuenta="ES02 1111 2222 3333 4444 5555"
+    Ayuda="100"
+    Pago="Mensual"
+    Tipo="Público"
+    Imagen="/Perros/Perro1.jpg"
+  </Socio>
+</Socios>
