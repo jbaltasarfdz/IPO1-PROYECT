@@ -1,7 +1,7 @@
 ﻿
 
 <Voluntarios>
-  <Voluntario>
+  <Voluntario
     Nombre="Jesus"
     Apellidos="Baltasar Fernández"
     Sexo="Hombre"
@@ -9,7 +9,23 @@
     Edad="22"
     Telefono="111222333"
     Correo="JesusBF@correoprueba.es"
-    
+    Horario="Tarde"
+    Zona="Territorio nacional"
+    Veterinario="Conocimientos básicos"
     Imagen="/Perros/Perro1.jpg"
-  </Voluntario>
+  />
+  
+  <Voluntario
+    Nombre="Carlos"
+    Apellidos="Cogolludo Corroto"
+    Sexo="Hombre"
+    ID="07654321B"
+    Edad="21"
+    Telefono="246137890"
+    Correo="CarlosCC@correoprueba.es"
+    Horario="Jornada completa"
+    Zona="Toledo y Ciudad Real"
+    Veterinario="Sin conocimientos"
+    Imagen="/Perros/Perro1.jpg"
+  />
 </Voluntarios>

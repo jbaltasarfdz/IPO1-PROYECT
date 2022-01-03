@@ -106,7 +106,7 @@
                 Click="btnLogin_Click"
                 Background="#FFCB0A0A" Foreground="White" FontFamily="Segoe UI Semibold" 
                 Height="30" Width="116" MinHeight="30" MinWidth="116" 
-                
+                ToolTip="Pulse para iniciar sesión"
                 />
 
         <Button x:Name="btnSettings"  

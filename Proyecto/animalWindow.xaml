@@ -127,7 +127,7 @@
                Height="40" Width="65"
                />
 
-        <Button x:Name="btnAniadir" Content="Añadir animal" 
+        <Button x:Name="btnAniadir" Content="Añadir" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                 Margin="827,72,67.6,570.4"  
                 Height="48" Width="179"
@@ -148,7 +148,7 @@
                 Margin="827,235,67.6,405.4"
                 Height="50"  Width="179"
                 FontSize="16"
-                ToolTip="Pulse para Eliminar la información del animal" Click="btnEliminar_Click"
+                ToolTip="Pulse para eliminar la información del animal" Click="btnEliminar_Click"
                 />
 
         <Button x:Name="btnInformacionApadrinado"  
@@ -156,7 +156,8 @@
                 Margin="483,219,549.6,435.4"  
                 Height="36" Width="40.8"
                 IsEnabled="True" Visibility="Visible"
-                BorderBrush="#00707070" Foreground="#00707070" 
+                BorderBrush="#00707070" Foreground="#00707070"
+                ToolTip="Los perros podrán estar Adoptados, Reservados, en Cuarentena o Fallecidos"
                 >
             <Button.Background>
                 <ImageBrush ImageSource="Images/informacion.png" Stretch="Uniform"/>

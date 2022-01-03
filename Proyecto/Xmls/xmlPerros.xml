@@ -19,18 +19,17 @@
 
   <Perro
     Nombre="Charli"
-    Estado=" Abandonado"
-    Raza=" Española"
-    FechaEntrada=" 19/10/2021"
-    Sexo=" Macho"
-    Chip ="039SJ7"
-    Edad=" 6"
-    Tamanio =" Mediano"
-    PPP=" No"
-    Enfermedades=" Ninguna"
-    Vacunado=" Esta vacunado"
-    Descripcion=" Es un perro timido pero muy cariñoso"
+    Estado="Abandonado"
+    Raza="Española"
+    FechaEntrada="19/10/2021"
+    Sexo="Macho"
+    Chip="039SJ7"
+    Edad="6"
+    Tamanio="Mediano"
+    PPP="No"
+    Enfermedades="Ninguna"
+    Vacunado="Esta vacunado"
+    Descripcion="Es un perro timido pero muy cariñoso"
     Imagen="/Perros/Perro1.jpg"
   />
-
 </Perros>

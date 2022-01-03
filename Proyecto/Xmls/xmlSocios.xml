@@ -1,7 +1,7 @@
 ﻿
 
 <Socios>
-  <Socio>
+  <Socio
     Nombre="Jesus"
     Apellidos="Baltasar Fernández"
     Sexo="Hombre"
@@ -14,9 +14,9 @@
     Pago="Mensual"
     Tipo="Normal"
     Imagen="/Perros/Perro1.jpg"
-  </Socio>
+  />
 
-  <Socio>
+  <Socio
     Nombre="Purina"
     Apellidos="SA"
     Sexo=""
@@ -29,9 +29,9 @@
     Pago="Anual"
     Tipo="Premium"
     Imagen="/Perros/Perro1.jpg"
-  </Socio>
+  />
 
-  <Socio>
+  <Socio
     Nombre="Excmo. Ayuntamiento"
     Apellidos="de Ciudad Real"
     Sexo=""
@@ -44,5 +44,5 @@
     Pago="Mensual"
     Tipo="Público"
     Imagen="/Perros/Perro1.jpg"
-  </Socio>
+  />
 </Socios>
