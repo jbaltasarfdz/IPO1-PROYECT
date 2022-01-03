@@ -61,5 +61,29 @@ namespace Proyecto
             }
             return listado;
         }
+
+        private void btnAniadir_Click(object sender, RoutedEventArgs e)
+        {
+            var nuevoPerro = new Animal("...", "...", "...", "...", "...", "...", 0, "...", "...", "...", "...", "...", 
+                new Uri("Images/silueta.jpg", UriKind.Relative));
+            // Añadimos una nueva película a la lista de películas (listadoPeliculas)
+            listadoPerros.Add(nuevoPerro);
+            // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
+            // queden actualizadas
+            cbListaPerros.Items.Refresh();
+        }
+
+        private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            listadoPerros.RemoveAt(cbListaPerros.SelectedIndex);
+            // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
+            // queden actualizadas
+            cbListaPerros.Items.Refresh();
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            cbListaPerros.Items.Refresh();
+        }
     }
 }

@@ -132,24 +132,23 @@
                 Margin="827,72,67.6,570.4"  
                 Height="48" Width="179"
                 FontSize="16"
-                ToolTip="Pulse para añadir un animal"
+                ToolTip="Pulse para añadir un animal" Click="btnAniadir_Click"
                 />
 
-        <Button Content="Editar información" 
-                HorizontalAlignment="Stretch" 
-                Margin="827,152,67.6,485.4" 
-                VerticalAlignment="Stretch" 
+        <Button x:Name="btnEditar" Content="Editar información" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                Margin="827,152,67.6,485.4"
                 Height="50" Width="179"
                 FontSize="16"
-                ToolTip="Pulse para editar la información del animal"
+                ToolTip="Pulse para editar la información del animal" Click="btnEditar_Click"
                 />
 
-        <Button Content="Eliminar" 
+        <Button x:Name="btnEliminar" Content="Eliminar" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                 Margin="827,235,67.6,405.4"
                 Height="50"  Width="179"
                 FontSize="16"
-                ToolTip="Pulse para Eliminar la información del animal"
+                ToolTip="Pulse para Eliminar la información del animal" Click="btnEliminar_Click"
                 />
 
         <TextBox  
