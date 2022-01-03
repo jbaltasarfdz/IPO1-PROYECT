@@ -151,6 +151,18 @@
                 ToolTip="Pulse para Eliminar la información del animal" Click="btnEliminar_Click"
                 />
 
+        <Button x:Name="btnInformacionApadrinado"  
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="483,219,549.6,435.4"  
+                Height="36" Width="40.8"
+                IsEnabled="True" Visibility="Visible"
+                BorderBrush="#00707070" Foreground="#00707070" 
+                >
+            <Button.Background>
+                <ImageBrush ImageSource="Images/informacion.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
         <TextBox  
             Margin="303,119,595.6,536.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Nombre}"  
@@ -158,11 +170,11 @@
             ToolTip="Introduzca el nombre del animal"
             />
 
-        <TextBox  
+        <TextBox x:Name="txtEstado"  
             Margin="303,219,595.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Estado}"  
             Height="36" Width="175"  
-            ToolTip="Introduzca el estado del animal" 
+            ToolTip="Introduzca el estado del animal" TextChanged="txtEstado_TextChanged" 
             />
 
         <TextBox  

@@ -85,5 +85,19 @@ namespace Proyecto
         {
             cbListaPerros.Items.Refresh();
         }
+
+        private void txtEstado_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtEstado.Text == "Apadrinado" || txtEstado.Text == "apadrinado" || txtEstado.Text == "APADRINADO")
+            {
+                btnInformacionApadrinado.IsEnabled = true;
+                btnInformacionApadrinado.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnInformacionApadrinado.IsEnabled = false;
+                btnInformacionApadrinado.Visibility = Visibility.Hidden;
+            }
+        }
     }
 }

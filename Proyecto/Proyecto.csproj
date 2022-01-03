@@ -150,5 +150,8 @@
   <ItemGroup>
     <Resource Include="Xmls\xmlSocios.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\informacion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
