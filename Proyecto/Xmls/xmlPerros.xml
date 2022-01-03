@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿
 
 <Perros>
   <Perro
-    Nombre ="Jesus"
+    Nombre="Jesus"
     Estado="Apadrinado"
     Raza="Española"
     FechaEntrada="11/3/2021"
@@ -14,7 +14,7 @@
     Enfermedades="Ninguna"
     Vacunado="Esta vacunado"
     Descripcion="Es un perro muy sociable"
-    Imagen = "/Perros/Perro1.jpg"
+    Imagen="/Perros/Perro1.jpg"
   />
 
   <Perro
@@ -30,7 +30,7 @@
     Enfermedades=" Ninguna"
     Vacunado=" Esta vacunado"
     Descripcion=" Es un perro timido pero muy cariñoso"
-    Imagen ="/Perros/Perro1.jpg"
+    Imagen="/Perros/Perro1.jpg"
   />
 
 </Perros>

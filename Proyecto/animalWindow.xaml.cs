@@ -21,8 +21,7 @@ namespace Proyecto
     public partial class animalWindow : Window
     {
         private List<Animal> listadoPerros;
-        static string relativePath = "Images/images.jpg";
-        private Animal animal1 = new Animal("Jesús", "Apadrinado", "Perro", "29-12-2021", "Macho", "ABCD69", 22, "mediano",  "PPP", "", "Vacunado", "Es él", new Uri(uriString: relativePath, UriKind.Relative));
+
         public animalWindow()
         {
             InitializeComponent();
@@ -42,7 +41,7 @@ namespace Proyecto
             doc.Load(fichero.Stream);
             foreach (XmlNode node in doc.DocumentElement.ChildNodes)
             {
-                var newPerro = new Animal("", "", "", "", "", "", 0, "", "", null, "", "", null);
+                var newPerro = new Animal("", "", "", "", "", "", 0, "", "", "", "", "", null);
                 newPerro.Nombre = node.Attributes["Nombre"].Value;
                 newPerro.Estado = node.Attributes["Estado"].Value;
                 newPerro.Raza = node.Attributes["Raza"].Value;
@@ -60,7 +59,7 @@ namespace Proyecto
 
                 listado.Add(newPerro);
             }
-            return listado;    
+            return listado;
         }
     }
 }
