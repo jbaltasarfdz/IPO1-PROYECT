@@ -15,16 +15,16 @@ namespace Proyecto
         public string ID { set; get; }
         public string edad { set; get; }
         public string telefono { set; get; }
-        public string email { set; get; }
-        public string cuentaBancaria { set; get; }
-        public int ayudaEuros { set; get; }
-        public string opcionPago { set; get; }
-        public string tipoSocio { set; get; }
+        public string correo { set; get; }
+        public string cuenta { set; get; }
+        public string ayuda { set; get; }
+        public string pago { set; get; }
+        public string tipo { set; get; }
         public Uri Imagen { set; get; }
         public BitmapImage Foto {set; get; }
     
 
-        public Socio(string nombre, string apellidos, string sexo, string ID, string edad, string telefono, string email, string cuentaBancaria, int  ayudaEuros, string opcionPago, string tipoSocio, Uri Imagen)
+        public Socio(string nombre, string apellidos, string sexo, string ID, string edad, string telefono, string correo, string cuenta, string  ayuda, string pago, string tipo, Uri Imagen)
         {
             this.nombre = nombre;
             this.apellidos = apellidos;
@@ -32,11 +32,11 @@ namespace Proyecto
             this.ID = ID;
             this.edad = edad;
             this.telefono = telefono;
-            this.email = email;
-            this.cuentaBancaria = cuentaBancaria;
-            this.ayudaEuros = ayudaEuros;
-            this.opcionPago = opcionPago;
-            this.tipoSocio = tipoSocio;
+            this.correo = correo;
+            this.cuenta = cuenta;
+            this.ayuda = ayuda;
+            this.pago = pago;
+            this.tipo = tipo;
             this.Imagen = Imagen;
         }
 

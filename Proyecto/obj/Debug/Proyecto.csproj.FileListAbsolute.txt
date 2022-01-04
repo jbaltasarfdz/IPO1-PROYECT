@@ -70,3 +70,5 @@ D:\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.baml
 D:\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.baml
 D:\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.g.cs
 D:\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.baml
+C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.g.cs
+C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.baml

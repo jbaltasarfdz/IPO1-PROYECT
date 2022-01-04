@@ -7,11 +7,6 @@
         mc:Ignorable="d"
         Title="Adopta un Amigo - Socios" Height="720" Width="1080" WindowState="Maximized" ResizeMode="CanResize" MinWidth="1080" MinHeight="720">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="59*"/>
-            <ColumnDefinition Width="132*"/>
-            <ColumnDefinition Width="883*"/>
-        </Grid.ColumnDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="Images/fondo.jpg"/>
         </Grid.Background>
@@ -19,7 +14,7 @@
                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                    Margin="24,29,26,10" 
                    RadiusY="5" RadiusX="5" Opacity="0.41"
-                   Stroke="Black" Grid.ColumnSpan="3"
+                   Stroke="Black"
                    />
 
         <Rectangle Fill="#FF373A34" 
@@ -27,27 +22,27 @@
                    Margin="38,60,832,393" 
                    Width="204" Height="237.6"
                    RadiusY="5" RadiusX="5" Opacity="0.41"
-                   Stroke="Black" Grid.ColumnSpan="3"/>
-
-
+                   Stroke="Black"
+                   />
 
         <GroupBox Header="Cuenta bancaria" 
-                  Margin="326,302,56,98"  
-                  Height="291.2" Width="501" Grid.Column="2"
+                  Margin="494,302,78.6,97.4"  
+                  Height="291.2" Width="501"
                   />
 
         <GroupBox Header="Datos Principales"  
-                  Margin="64,44,290,394" 
-                  Height="253" Width="529" Grid.Column="2"
+                  Margin="257,44,287.6,393.4" 
+                  Height="253" Width="529"
                   />
 
         <GroupBox Header="Otros Datos"  
                   Margin="38,302,596,25" 
-                  Height="364" Width="440" Grid.ColumnSpan="3"/>
+                  Height="364" Width="440"
+                  />
 
         <ComboBox x:Name="cbListaSocios" 
                   HorizontalAlignment="Stretch" 
-                  Height="28" Margin="58,257,852,406" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2" Grid.ColumnSpan="3">
+                  Height="28" Margin="58,257,852,406" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2">
             <ComboBox.ItemContainerStyle>
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="Margin" Value="1"/>
@@ -79,169 +74,160 @@
         </ComboBox>
 
         <Label Content="Nombre"  
-               Margin="96,80,707,571"  
-               Width="80" Height="40" Grid.Column="2" 
+               Margin="280,78,713.6,572.4"  
+               Width="80" Height="40" 
                />
 
         <Label Content="Sexo"  
-               Margin="81,333,751,318"  
-               Height="40" Width="51" Grid.Column="2"
+               Margin="255,325,767.6,325.4"  
+               Height="40" Width="51"
                />
 
         <Label Content="Telefono"  
-               Margin="53,333,43,318"  
-               Height="40" Grid.ColumnSpan="2"
+               Margin="58,337,922.6,313.4"  
+               Height="40"
                />
 
         <Label Content="E-mail" 
-               Margin="81,412,727,240" 
-               Height="39" Width="75" Grid.Column="2"
+               Margin="58,412,940.6,239.4" 
+               Height="39" Width="75"
                />
 
         <Label Content="Edad" 
-               Margin="53,411,84,240" 
-               Height="40" Width="54" Grid.ColumnSpan="2" 
+               Margin="257,414,762.6,236.4" 
+               Height="40" Width="54" 
                />
 
-        <Label Content="Fecha de entrada"  
-               Margin="338,80,369,571" 
-               Height="40" Width="176" Grid.Column="2"/>
-
         <Label Content="ID Socio"  
-               Margin="338,181,448,470" 
-               Height="40" Grid.Column="2" 
+               Margin="521,174,264.6,476.4" 
+               Height="40" 
                />
 
         <Label Content="Tipo de socio"  
-               Margin="1,573,739,79"  
-               Height="39" Grid.Column="2"
+               Margin="141,573,598.6,78.4"  
+               Height="39"
                />
 
         <Label Content="Opcion pago" 
-               Margin="81,494,666,157" 
-               Height="40" Grid.Column="2"
+               Margin="257,487,700.6,163.4" 
+               Height="40"
                />
 
         <Label Content="Ayuda"  
-               Margin="53,494,871,158" 
-               Height="39" Width="150" Grid.ColumnSpan="3"
+               Margin="58,488,865.6,163.4" 
+               Height="39" Width="150"
                />
 
         <Label Content="Apellidos"  
-               Margin="96,181,694,470"  
-               Height="40" Grid.Column="2"
+               Margin="422,174,476.6,476.4"  
+               Height="40"
                />
 
         <Button x:Name="btnAniadir" Content="Añadir" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="636,72,68,571"  
+                Margin="796,70,98.6,572.4"  
                 Height="48" Width="179"
                 FontSize="16"
-                ToolTip="Pulse para añadir un socio" Click="btnAniadir_Click" Grid.Column="2"
+                ToolTip="Pulse para añadir un socio" Click="btnAniadir_Click"
                 />
 
         <Button x:Name="btnEditar" Content="Editar información" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-                Margin="636,154,68,487"
+                Margin="796,149,98.6,491.4"
                 Height="50" Width="179"
                 FontSize="16"
-                ToolTip="Pulse para editar la información del socio" Click="btnEditar_Click" Grid.Column="2"
+                ToolTip="Pulse para editar la información del socio" Click="btnEditar_Click"
                 />
 
         <Button x:Name="btnEliminar" Content="Eliminar" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="636,235,68,406"
+                Margin="796,235,98.6,405.4"
                 Height="50"  Width="179"
                 FontSize="16"
-                ToolTip="Pulse para eliminar la información del socio" Click="btnEliminar_Click" Grid.Column="2"
+                ToolTip="Pulse para eliminar la información del socio" Click="btnEliminar_Click"
                 />
 
         <TextBox  
-            Margin="112,119,596,537" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Nombre}"  
+            Margin="280,119,618.6,536.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.nombre}"  
             Height="35" Width="175" 
-            ToolTip="Introduzca el nombre del animal" Grid.Column="2"
+            ToolTip="Introduzca el nombre del socio"
             />
 
         <TextBox x:Name="txtApellidos"  
-            Margin="112,219,596,436" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Apellidos}"  
+            Margin="280,219,618.6,435.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.apellidos}"  
             Height="36" Width="175"  
-            ToolTip="Introduzca el estado del animal" Grid.Column="2" 
+            ToolTip="Introduzca los apellidos del socio" 
             />
 
         <TextBox  
-            Margin="6.706,374,833,282" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Telefono}"  
+            Margin="58,377,840.6,278.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.telefono}"  
             Height="35" Width="175"
-            ToolTip="Introduzca la raza del animal" Grid.ColumnSpan="2" Grid.Column="1" 
+            ToolTip="Introduzca el teléfono del socio" 
             />
 
         <TextBox  
-            Margin="351,119,328,537" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.FechaEntrada}" Width="204" 
-            ToolTip="Introduzca la fecha de entrada del animal" Grid.Column="2" 
-            />
-
-        <TextBox  
-            Margin="95,374,613,281" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Sexo}"  
+            Margin="257,373,641.6,281.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.sexo}"  
             Height="36" Width="175"
-            ToolTip="Introduzca el sexo del animal" Grid.Column="2" 
+            ToolTip="Introduzca el sexo del socio"
             />
 
         <TextBox  
-            Margin="351,219,357,436" 
+            Margin="521,219,348.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ID}"  
-            Height="36" Width="175" 
-            ToolTip="Inroduzca el número de chip del animal" Grid.Column="2" 
+            Height="36" 
+            ToolTip="Inroduzca el identificador del socio" 
             />
 
         <TextBox   
-            Margin="5.706,451,833,204" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Edad}"  
+            Margin="57,451,840.6,203.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.correo}"  
             Height="36" Width="176" 
-            ToolTip="Introduzca la edad del animal" Grid.ColumnSpan="2" Grid.Column="1" 
+            ToolTip="Introduzca el e-mail del socio"
             />
 
         <TextBox  
-            Margin="94,451,613,204" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Correo}" 
+            Margin="256,451,641.6,203.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.edad}" 
             Height="36" Width="176" 
-            ToolTip="Introduzca el tamaño del animal" Grid.Column="2" />
+            ToolTip="Introduzca la edad del socio"
+            />
 
         <TextBox  
             Margin="111.706,612,727,44" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Tipo}"  
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.tipo}"  
             Height="35" Width="176" 
-            ToolTip="Introduzca si es un animal PPP" Grid.ColumnSpan="2" Grid.Column="1" 
+            ToolTip="Introduzca el tipo de socio" 
             />
 
         <TextBox 
-            Margin="5.706,532,833,123" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Ayuda}" 
+            Margin="57,532,840.6,122.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ayuda}" 
             Height="36" Width="176" 
-            ToolTip="Inntroduzca las enfermedades del animal" Grid.ColumnSpan="2" Grid.Column="1" 
+            ToolTip="Introduzca la ayuda del socio"
             />
 
         <TextBox  
-            Margin="94,532,613,123" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Pago}" 
+            Margin="255,532,642.6,122.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.pago}" 
             Height="36" Width="176" 
-            ToolTip="Introduzca si está vacunado el animal" Grid.Column="2" 
+            ToolTip="Introduzca la forma de pago del socio"
             />
 
         <TextBox   
-            Margin="351,347,78,281" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.Cuenta}" Width="454"  
-            ToolTip="Introduzca una descripción del animal" Grid.Column="2"
+            Margin="521,349,98.6,278.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.cuenta}" Width="454"  
+            ToolTip="Introduzca la cuenta bancaria del socio"
             />
 
         <Image 
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
             Margin="58,70,852,444"
             Height="177" Width="164" 
-            Source="{Binding ElementName=cbListaSocios, Path=SelectedItem.Imagen}" Stretch="UniformToFill" Grid.ColumnSpan="3"
+            Source="{Binding ElementName=cbListaSocios, Path=SelectedItem.Imagen}" Stretch="UniformToFill"
             />
 
 

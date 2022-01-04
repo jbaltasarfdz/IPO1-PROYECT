@@ -41,18 +41,18 @@ namespace Proyecto
             doc.Load(fichero.Stream);
             foreach (XmlNode node in doc.DocumentElement.ChildNodes)
             {
-                var newSocio = new Socio("", "", "", "", "", "", "", "", 0, "", "", null);
-                newSocio.nombre = node.Attributes["Nombre"].Value;
-                newSocio.apellidos = node.Attributes["Apellidos"].Value;
-                newSocio.sexo = node.Attributes["Sexo"].Value;
+                var newSocio = new Socio("", "", "", "", "", "", "", "", "", "", "", null);
+                newSocio.nombre = node.Attributes["nombre"].Value;
+                newSocio.apellidos = node.Attributes["apellidos"].Value;
+                newSocio.sexo = node.Attributes["sexo"].Value;
                 newSocio.ID = node.Attributes["ID"].Value;
-                newSocio.edad = node.Attributes["Edad"].Value;
-                newSocio.telefono = node.Attributes["Telefono"].Value;
-                newSocio.email = node.Attributes["Correo"].Value;
-                newSocio.cuentaBancaria = node.Attributes["Cuenta"].Value;
-                newSocio.ayudaEuros = Convert.ToInt32(node.Attributes["Ayuda"].Value);
-                newSocio.opcionPago =  node.Attributes["Pago"].Value;
-                newSocio.tipoSocio = node.Attributes["Tipo"].Value;
+                newSocio.edad = node.Attributes["edad"].Value;
+                newSocio.telefono = node.Attributes["telefono"].Value;
+                newSocio.correo = node.Attributes["correo"].Value;
+                newSocio.cuenta = node.Attributes["cuenta"].Value;
+                newSocio.ayuda = node.Attributes["ayuda"].Value;
+                newSocio.pago =  node.Attributes["pago"].Value;
+                newSocio.tipo = node.Attributes["tipo"].Value;
                 newSocio.Imagen = new Uri(Environment.CurrentDirectory + node.Attributes["Imagen"].Value);
                 //newSocio.Foto = new BitmapImage(newSocio.Imagen);
 
@@ -67,7 +67,7 @@ namespace Proyecto
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 MessageBox.Show("Se ha añadido correctamente un nuevo socio.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
-                var nuevoSocio = new Socio("...", "...", "...", "...", "...", "...", "...", "...", 0, "...", "...", new Uri("Images/silueta.jpg", UriKind.Relative));
+                var nuevoSocio = new Socio("...", "...", "...", "...", "...", "...", "...", "...", "...", "...", "...", new Uri("Images/silueta.jpg", UriKind.Relative));
                 // Añadimos una nueva película a la lista de películas (listadoPeliculas)
                 listadoSocios.Add(nuevoSocio);
                 // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
