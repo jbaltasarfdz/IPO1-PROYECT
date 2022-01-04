@@ -64,26 +64,57 @@ namespace Proyecto
 
         private void btnAniadir_Click(object sender, RoutedEventArgs e)
         {
-            var nuevoPerro = new Animal("...", "...", "...", "...", "...", "...", 0, "...", "...", "...", "...", "...", 
-                new Uri("Images/silueta.jpg", UriKind.Relative));
-            // Añadimos una nueva película a la lista de películas (listadoPeliculas)
-            listadoPerros.Add(nuevoPerro);
-            // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
-            // queden actualizadas
-            cbListaPerros.Items.Refresh();
+            if (MessageBox.Show("Va a añadir un nuevo perro a la base de datos, ¿Desea continuar?", "Añadir Perro", 
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se ha añadido correctamente un nuevo perro.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+                var nuevoPerro = new Animal("...", "...", "...", "...", "...", "...", 0, "...", "...", "...", "...", "...",
+                                new Uri("Images/silueta.jpg", UriKind.Relative));
+                // Añadimos una nueva película a la lista de películas (listadoPeliculas)
+                listadoPerros.Add(nuevoPerro);
+                // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
+                // queden actualizadas
+                cbListaPerros.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción","Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
-            listadoPerros.RemoveAt(cbListaPerros.SelectedIndex);
-            // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
-            // queden actualizadas
-            cbListaPerros.Items.Refresh();
+            if (MessageBox.Show("Va a eliminar un perro de la base de datos, ¿Desea continuar?", "Eliminar Perro",
+                MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se ha eliminado correctamente el perro seleccionado.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+                listadoPerros.RemoveAt(cbListaPerros.SelectedIndex);
+                // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
+                // queden actualizadas
+                cbListaPerros.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+
+
         }
 
         private void btnEditar_Click(object sender, RoutedEventArgs e)
         {
-            cbListaPerros.Items.Refresh();
+            if (MessageBox.Show("Va a editar la información de perro de la base de datos, ¿Desea continuar?", "Editar Perro",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se ha editado correctamente la información correspondiente al perro seleccionado.", "Resultado", 
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+                cbListaPerros.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private void txtEstado_TextChanged(object sender, TextChangedEventArgs e)
