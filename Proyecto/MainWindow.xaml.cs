@@ -74,10 +74,6 @@ namespace Proyecto
             return valido;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
 
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
@@ -87,8 +83,8 @@ namespace Proyecto
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            animalWindow animalwindow = new animalWindow();
-            animalwindow.Show();
+            userWindow userwindow = new userWindow();
+            userwindow.Show();
         }
     }
 

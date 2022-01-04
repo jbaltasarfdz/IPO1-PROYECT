@@ -23,5 +23,26 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void btnGestionListadoPerros_Click(object sender, RoutedEventArgs e)
+        {
+            animalWindow animalwindow = new animalWindow();
+            animalwindow.Show();
+        }
+
+        private void btnGestionVoluntarios_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGestionSocios_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGestionAvisos_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

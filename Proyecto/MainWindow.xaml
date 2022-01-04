@@ -75,7 +75,7 @@
         <TextBox x:Name="txtUsuario"  
                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                  Margin="443,142,172,297.4" 
-                 TextWrapping="Wrap" TextChanged="TextBox_TextChanged"
+                 TextWrapping="Wrap"
                  SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" 
                  Height="31" Width="179" MinHeight="31" MinWidth="179"  
                  ToolTip="Introduzca su usuario" 
