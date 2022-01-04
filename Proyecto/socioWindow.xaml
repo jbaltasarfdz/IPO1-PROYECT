@@ -67,7 +67,7 @@
                             Source="{Binding Imagen}"/>
                         <TextBlock VerticalAlignment="Center"
                             Margin="10,0,0,0"
-                            Text="{Binding Nombre}" />
+                            Text="{Binding nombre}" />
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
