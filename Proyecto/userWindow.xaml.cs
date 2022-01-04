@@ -32,7 +32,8 @@ namespace Proyecto
 
         private void btnGestionVoluntarios_Click(object sender, RoutedEventArgs e)
         {
-
+            voluntarioWindow voluntariowindow = new voluntarioWindow();
+            voluntariowindow.Show();
         }
 
         private void btnGestionSocios_Click(object sender, RoutedEventArgs e)

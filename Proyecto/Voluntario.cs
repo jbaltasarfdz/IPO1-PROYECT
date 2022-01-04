@@ -7,7 +7,7 @@ using System.Windows.Media.Imaging;
 
 namespace Proyecto
 {
-    class Socio
+    class Voluntario
     {
         public string nombre { set; get; }
         public string apellidos { set; get; }
@@ -16,15 +16,14 @@ namespace Proyecto
         public int edad { set; get; }
         public string telefono { set; get; }
         public string correo { set; get; }
-        public string cuenta { set; get; }
-        public int ayuda { set; get; }
-        public string pago { set; get; }
-        public string tipo { set; get; }
+        public string horario { set; get; }
+        public string zona { set; get; }
+        public string veterinario { set; get; }
         public Uri Imagen { set; get; }
         public BitmapImage Foto {set; get; }
     
 
-        public Socio(string nombre, string apellidos, string sexo, string ID, int edad, string telefono, string correo, string cuenta, int  ayuda, string pago, string tipo, Uri Imagen)
+        public Voluntario(string nombre, string apellidos, string sexo, string ID, int edad, string telefono, string correo, string horario, string zona, string veterinario, Uri Imagen)
         {
             this.nombre = nombre;
             this.apellidos = apellidos;
@@ -33,10 +32,9 @@ namespace Proyecto
             this.edad = edad;
             this.telefono = telefono;
             this.correo = correo;
-            this.cuenta = cuenta;
-            this.ayuda = ayuda;
-            this.pago = pago;
-            this.tipo = tipo;
+            this.horario = horario;
+            this.zona = zona;
+            this.veterinario = veterinario;
             this.Imagen = Imagen;
         }
 

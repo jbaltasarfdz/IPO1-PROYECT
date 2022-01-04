@@ -60,6 +60,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="voluntarioWindow.xaml.cs">
+      <DependentUpon>voluntarioWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Voluntario.cs" />
     <Compile Include="Socio.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="socioWindow.xaml.cs">
@@ -75,6 +79,10 @@
       <DependentUpon>userWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <Page Include="voluntarioWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="socioWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
