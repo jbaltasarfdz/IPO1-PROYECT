@@ -62,3 +62,11 @@ C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.g.cs
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.baml
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.baml
+D:\IPO1-PROYECT\Proyecto\bin\Debug\FontAwesome.Sharp.dll
+D:\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.g.cs
+D:\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.g.cs
+D:\IPO1-PROYECT\Proyecto\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\IPO1-PROYECT\Proyecto\obj\Debug\animalWindow.baml
+D:\IPO1-PROYECT\Proyecto\obj\Debug\userWindow.baml
+D:\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.g.cs
+D:\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.baml

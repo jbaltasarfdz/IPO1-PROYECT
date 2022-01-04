@@ -37,7 +37,8 @@ namespace Proyecto
 
         private void btnGestionSocios_Click(object sender, RoutedEventArgs e)
         {
-
+            socioWindow sociowindow = new socioWindow();
+            sociowindow.Show();
         }
 
         private void btnGestionAvisos_Click(object sender, RoutedEventArgs e)

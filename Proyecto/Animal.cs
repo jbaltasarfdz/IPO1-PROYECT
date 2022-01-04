@@ -12,7 +12,7 @@ namespace Proyecto
         public string Nombre { set; get; }
         public string Estado { set; get; }
         public string Raza { set; get; }
-        public String FechaEntrada { set; get; }
+        public string FechaEntrada { set; get; }
         public string Sexo { set; get; }
         public string Chip { set; get; }
         public int Edad { set; get; }
