@@ -67,7 +67,7 @@ namespace Proyecto
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 MessageBox.Show("Se ha añadido correctamente un nuevo socio.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
-                var nuevoSocio = new Socio("...", "...", "...", "...", "...", "...", "...", "...", "...", "...", "...", new Uri("Images/silueta.jpg", UriKind.Relative));
+                var nuevoSocio = new Socio("...", "...", "...", "...", "...", "...", "...", "...", "...", "...", "...", new Uri("Images/user.png", UriKind.Relative));
                 // Añadimos una nueva película a la lista de películas (listadoPeliculas)
                 listadoSocios.Add(nuevoSocio);
                 // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
