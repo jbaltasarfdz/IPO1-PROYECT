@@ -170,7 +170,8 @@
 
         <TextBox x:Name="txtSexo"  
             Margin="280,372,618.6,283.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.sexo}" Width="175"
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.sexo}" 
+            Height="35.2" Width="175"
             ToolTip="Introduzca el sexo del socio"
             />
 
