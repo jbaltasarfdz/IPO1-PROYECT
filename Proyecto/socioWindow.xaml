@@ -79,17 +79,17 @@
                />
 
         <Label Content="Sexo"  
-               Margin="255,325,767.6,325.4"  
+               Margin="260,337,762.6,313.4"  
                Height="40" Width="51"
                />
 
         <Label Content="Telefono"  
-               Margin="58,337,922.6,313.4"  
-               Height="40"
+               Margin="48,337,932.6,313.4"  
+               Height="40" Width="92.8"
                />
 
         <Label Content="E-mail" 
-               Margin="58,412,940.6,239.4" 
+               Margin="48,414,950.6,237.4" 
                Height="39" Width="75"
                />
 
@@ -100,27 +100,27 @@
 
         <Label Content="ID Socio"  
                Margin="521,174,264.6,476.4" 
-               Height="40" 
+               Height="40" Width="288" 
                />
 
         <Label Content="Tipo de socio"  
                Margin="141,573,598.6,78.4"  
-               Height="39"
+               Height="39" Width="334.4"
                />
 
         <Label Content="Opcion pago" 
-               Margin="257,487,700.6,163.4" 
-               Height="40"
+               Margin="257,492,700.6,158.4" 
+               Height="40" Width="116"
                />
 
         <Label Content="Ayuda"  
-               Margin="58,488,865.6,163.4" 
+               Margin="48,492,875.6,159.4" 
                Height="39" Width="150"
                />
 
         <Label Content="Apellidos"  
-               Margin="422,174,476.6,476.4"  
-               Height="40"
+               Margin="280,174,695.6,476.4"  
+               Height="40" Width="97.6"
                />
 
         <Button x:Name="btnAniadir" Content="Añadir" 
@@ -147,71 +147,70 @@
                 ToolTip="Pulse para eliminar la información del socio" Click="btnEliminar_Click"
                 />
 
-        <TextBox  
-            Margin="280,119,618.6,536.4" 
+        <TextBox x:Name="txtNombre"  
+            Margin="300,118,598.6,537.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.nombre}"  
             Height="35" Width="175" 
             ToolTip="Introduzca el nombre del socio"
             />
 
         <TextBox x:Name="txtApellidos"  
-            Margin="280,219,618.6,435.4" 
+            Margin="300,219,598.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.apellidos}"  
             Height="36" Width="175"  
             ToolTip="Introduzca los apellidos del socio" 
             />
 
-        <TextBox  
-            Margin="58,377,840.6,278.4" 
+        <TextBox x:Name="txtTelefono"  
+            Margin="67,372,831.6,283.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.telefono}"  
             Height="35" Width="175"
             ToolTip="Introduzca el teléfono del socio" 
             />
 
-        <TextBox  
-            Margin="257,373,641.6,281.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.sexo}"  
-            Height="36" Width="175"
+        <TextBox x:Name="txtSexo"  
+            Margin="280,372,618.6,283.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.sexo}" Width="175"
             ToolTip="Introduzca el sexo del socio"
             />
 
-        <TextBox  
-            Margin="521,219,348.6,435.4" 
+        <TextBox x:Name="txtIDSocio"  
+            Margin="547,219,322.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ID}"  
-            Height="36" 
+            Height="36" Width="204"
             ToolTip="Inroduzca el identificador del socio" 
             />
 
-        <TextBox   
-            Margin="57,451,840.6,203.4" 
+        <TextBox x:Name="txtCorreo"   
+            Margin="67,451,830.6,203.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.correo}"  
             Height="36" Width="176" 
             ToolTip="Introduzca el e-mail del socio"
             />
 
-        <TextBox  
-            Margin="256,451,641.6,203.4" 
+        <TextBox x:Name="txtEdad"  
+            Margin="279,451,618.6,203.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.edad}" 
             Height="36" Width="176" 
             ToolTip="Introduzca la edad del socio"
             />
 
-        <TextBox  
-            Margin="111.706,612,727,44" 
+        <TextBox x:Name="txtTipoSocio"  
+            Margin="157,612,740.6,43.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.tipo}"  
             Height="35" Width="176" 
             ToolTip="Introduzca el tipo de socio" 
             />
 
-        <TextBox 
-            Margin="57,532,840.6,122.4" 
+        <TextBox x:Name="txtAyuda" 
+            Margin="67,527,830.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ayuda}" 
             Height="36" Width="176" 
             ToolTip="Introduzca la ayuda del socio"
             />
 
-        <TextBox  
-            Margin="255,532,642.6,122.4" 
+        <TextBox x:Name="txtOPago"  
+            Margin="280,527,617.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.pago}" 
             Height="36" Width="176" 
             ToolTip="Introduzca la forma de pago del socio"
@@ -219,7 +218,8 @@
 
         <TextBox   
             Margin="521,349,98.6,278.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.cuenta}" Width="454"  
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.cuenta}" 
+            Height="63.2" Width="454"  
             ToolTip="Introduzca la cuenta bancaria del socio"
             />
 
@@ -227,7 +227,7 @@
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
             Margin="58,70,852,444"
             Height="177" Width="164" 
-            Source="{Binding ElementName=cbListaSocios, Path=SelectedItem.Imagen}" Stretch="UniformToFill"
+            Source="{Binding ElementName=cbListaSocios, Path=SelectedItem.Imagen}" Stretch="Fill"
             />
 
 

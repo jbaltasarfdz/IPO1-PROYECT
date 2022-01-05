@@ -85,7 +85,7 @@
 
         <Label Content="Horario"  
                Margin="53,333,940.6,317.4"  
-               Height="40"
+               Height="40" Width="80"
                />
 
         <Label Content="Zona" 
@@ -104,17 +104,17 @@
 
         <Label Content="ID voluntario"  
                Margin="529,181,425.6,469.4" 
-               Height="40" 
+               Height="40" Width="119.2"
                />
 
         <Label Content="Apellidos"  
                Margin="287,181,686.6,469.4"  
-               Height="40"
+               Height="40" Width="100"
                />
 
         <Label Content="E-mail"
-               Margin="66,492,832.6,158.4"
-               Height="40"
+               Margin="53,492,845.6,158.4"
+               Height="40" Width="175.2"
                />
 
         <Button x:Name="btnAniadir" Content="Añadir" 
@@ -215,7 +215,7 @@
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
             Margin="58,68,851.6,441.4"
             Height="177" Width="164" 
-            Source="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.Imagen}" Stretch="UniformToFill"
+            Source="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.Imagen}" Stretch="Fill"
             />
 
     </Grid>

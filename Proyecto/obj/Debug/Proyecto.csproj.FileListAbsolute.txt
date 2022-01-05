@@ -74,3 +74,7 @@ C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenado
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.baml
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.g.cs
 C:\Users\carlo\Desktop\TERCERO\PRIMER CUATRIMESTRE\Interacción Persona-Ordenador I\Prácticas\Blend for Visual Studio 2019.lnk\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.baml
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.g.cs
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.g.cs
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.baml
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.baml

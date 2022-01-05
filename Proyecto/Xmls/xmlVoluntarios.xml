@@ -12,7 +12,7 @@
     horario="Tarde"
     zona="Territorio nacional"
     veterinario="Conocimientos básicos"
-    Imagen="/Perros/Perro1.jpg"
+    Imagen="/Voluntarios/siluetavoluntario.jpg"
   />
   
   <Voluntario
@@ -26,6 +26,6 @@
     horario="Jornada completa"
     zona="Toledo y Ciudad Real"
     veterinario="Sin conocimientos"
-    Imagen="/Perros/Perro1.jpg"
+    Imagen="/Voluntarios/siluetavoluntario.jpg"
   />
 </Voluntarios>

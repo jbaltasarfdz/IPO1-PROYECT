@@ -66,7 +66,7 @@ namespace Proyecto
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 MessageBox.Show("Se ha añadido correctamente un nuevo voluntario.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
-                var nuevoVoluntario = new Voluntario("...", "...", "...", "...", 0, "...", "...", "...", "...", "...", new Uri("Images/user.png", UriKind.Relative));
+                var nuevoVoluntario = new Voluntario("...", "...", "...", "...", 0, "...", "...", "...", "...", "...", new Uri("Images/siluetavoluntario.jpg", UriKind.Relative));
                 // Añadimos una nueva película a la lista de películas (listadoPeliculas)
                 listadoVoluntarios.Add(nuevoVoluntario);
                 // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
