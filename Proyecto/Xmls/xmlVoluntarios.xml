@@ -2,17 +2,17 @@
 
 <Voluntarios>
   <Voluntario
-    nombre="Jesus"
-    apellidos="Baltasar Fernández"
+    nombre="Carlos"
+    apellidos="Gomez Fernandez"
     sexo="Hombre"
     ID="01234567A"
     edad="22"
     telefono="111222333"
-    correo="JesusBF@correoprueba.es"
+    correo="CarlosGF@correoprueba.es"
     horario="Tarde"
     zona="Territorio nacional"
     veterinario="Conocimientos básicos"
-    Imagen="/Voluntarios/siluetavoluntario.jpg"
+    Imagen="/Voluntarios/Carlos.jpeg"
   />
   
   <Voluntario
@@ -26,6 +26,6 @@
     horario="Jornada completa"
     zona="Toledo y Ciudad Real"
     veterinario="Sin conocimientos"
-    Imagen="/Voluntarios/siluetavoluntario.jpg"
+    Imagen="/Voluntarios/Cogo.jpg"
   />
 </Voluntarios>

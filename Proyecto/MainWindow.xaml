@@ -91,15 +91,6 @@
             </TextBox.Text>
         </TextBox>
 
-        <TextBox x:Name="txtContrasena"  
-                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                 Margin="443,201,172,238.4" 
-                 TextWrapping="Wrap" Text=""  
-                 Background="#FF433B3B" Foreground="#FF888888" SelectionBrush="#FF888888" 
-                 Height="31"  Width="179" MinHeight="31" MinWidth="179" 
-                 ToolTip="Introduzca su contraseña"
-                 />
-
         <Button x:Name="btnLogin" Content="Acceder"  
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                 Margin="483,262,195,178.4"  
@@ -125,5 +116,15 @@
                Margin="128,123,550,231.4"  
                Height="116" Width="116" MinHeight="116" MinWidth="116"
                />
+        <PasswordBox Name="txtContrasena"
+                     HorizontalAlignment="Left" 
+                     Margin="443,206,0,0" 
+                     VerticalAlignment="Top" 
+                     SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" 
+                     Width="179" 
+                     Height="33" 
+                     PasswordChar="*"
+                     ToolTip="Introduzca su contraseña"
+                     />
     </Grid>
 </Window>

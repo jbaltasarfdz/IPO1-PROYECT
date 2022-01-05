@@ -78,3 +78,5 @@ C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindo
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.g.cs
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.baml
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\socioWindow.baml
+D:\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.g.cs
+D:\IPO1-PROYECT\Proyecto\obj\Debug\voluntarioWindow.baml

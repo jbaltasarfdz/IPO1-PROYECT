@@ -84,8 +84,23 @@ namespace Proyecto
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             userWindow userwindow = new userWindow();
-            userwindow.Show();
+            
+            if (txtUsuario.Text == usuario && txtContrasena.Password == password)
+            {
+                userwindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecto", "Error en el login", MessageBoxButton.OK, MessageBoxImage.Error);
+                txtUsuario.Clear();
+                txtContrasena.Clear();
+                
+            }
+            
         }
+
+
+
     }
 
     class ReglaRangoLongitudCaracteres : ValidationRule

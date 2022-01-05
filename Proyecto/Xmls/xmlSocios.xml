@@ -13,7 +13,7 @@
     ayuda="30"
     pago="Mensual"
     tipo="Normal"
-    Imagen="/Socios/siluetasocio.jpg"
+    Imagen="/Socios/Jesus.jfif"
   />
 
   <Socio
@@ -28,7 +28,7 @@
     ayuda="12000"
     pago="Anual"
     tipo="Premium"
-    Imagen="/Socios/siluetasocio.jpg"
+    Imagen="/Socios/Purina.jpg"
   />
 
   <Socio
@@ -43,6 +43,6 @@
     ayuda="100"
     pago="Mensual"
     tipo="Público"
-    Imagen="/Socios/siluetasocio.jpg"
+    Imagen="/Socios/CR.png"
   />
 </Socios>
