@@ -130,5 +130,24 @@ namespace Proyecto
                 btnInformacionApadrinado.Visibility = Visibility.Hidden;
             }
         }
+
+        private void btnInfo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Ventana para gestionar la información de los animales de la protectora", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnApagar_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Va a salir de la aplicación, ¿Desea continuar?", "Salir aplicación",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se va a salir de la aplicación.", "Salir aplicación", MessageBoxButton.OK, MessageBoxImage.Information);
+                Environment.Exit(1);
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
     }
 }

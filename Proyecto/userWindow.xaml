@@ -14,7 +14,7 @@
         <GroupBox Header="Datos Personales"  Height="320" Margin="330,10,28.6,360.4"  Width="715"/>
 
         <GroupBox Header="Último acceso"  Height="140" Margin="37,361,28.6,189.4"  Width="1008">
-            <Label Content="Fecha"  Height="40" Margin="49,32,51,31.2"  Width="896" ToolTip="Fecha del último acceso del administrador"/>
+            <Label Content="{Binding FechaAcceso}" Height="40" Margin="49,32,51,31.2"  Width="896" ToolTip="Fecha del último acceso del administrador"/>
         </GroupBox>
 
         <Label Content="Nombre"  
@@ -33,19 +33,22 @@
             Height="23" Width="204.8"
             Margin="445,86,423.6,581.4" 
             TextWrapping="Wrap"
-            ToolTip="Nombre del administrador"/>
-
+            ToolTip="Nombre del administrador"
+            Text="{Binding Nombre}"/>
+        
         <TextBox  
             Height="23" Width="268.8"
             Margin="445,165,359.6,502.4" 
             TextWrapping="Wrap"
-            ToolTip="Apellidos del administrador"/>
+            ToolTip="Apellidos del administrador"
+            Text="{Binding Apellidos}"/>
 
         <TextBox  
             Height="23" Width="487"
             Margin="445,243,141.6,424.4" 
             TextWrapping="Wrap"
-            ToolTip="E-mail del administrador"/>
+            ToolTip="E-mail del administrador"
+            Text="{Binding Correo}"/>
 
         <Button x:Name="btnGestionListadoPerros" Content="Gestión Listado Perros" 
                 Margin="104,549,816.6,80.4" 
@@ -70,7 +73,21 @@
         <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                Margin="66,66,816.6,390.4"  
                Height="234.4" Width="191" 
-               Source="Images/images.jpg" Stretch="Fill"/>
+               Source="Images/OIP.jpg" Stretch="Fill"/>
+
+        <Button x:Name="btnInfo" Margin="66,617,966.6,37.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/ayuda.png" 
+                        Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/apagar.png" 
+                        Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 

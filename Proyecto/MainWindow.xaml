@@ -117,9 +117,9 @@
                Height="116" Width="116" MinHeight="116" MinWidth="116"
                />
         <PasswordBox Name="txtContrasena"
-                     HorizontalAlignment="Left" 
-                     Margin="443,206,0,0" 
-                     VerticalAlignment="Top" 
+                     HorizontalAlignment="Stretch" 
+                     Margin="443,201,172,236.4" 
+                     VerticalAlignment="Stretch" 
                      SelectionBrush="#FF888888" Foreground="#FF888888" Background="#FF433B3B" 
                      Width="179" 
                      Height="33" 

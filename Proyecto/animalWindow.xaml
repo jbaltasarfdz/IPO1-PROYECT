@@ -253,18 +253,14 @@
             Height="177" Width="164" 
             Source="{Binding ElementName=cbListaPerros, Path=SelectedItem.Imagen}" Stretch="UniformToFill"
             />
-        <Button Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475">
-            
-            
+        <Button x:Name="btnInfo" Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/ayuda.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        
-        <Button Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5">
 
-
+        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/apagar.png" 
                         Stretch="Uniform"/>

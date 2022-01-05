@@ -114,18 +114,23 @@ namespace Proyecto
             }
         }
 
-        /*private void txtEstado_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnInfo_Click(object sender, RoutedEventArgs e)
         {
-            if (txtEstado.Text == "Apadrinado" || txtEstado.Text == "apadrinado" || txtEstado.Text == "APADRINADO")
+            MessageBox.Show("Ventana para gestionar la información de los voluntarios de la protectora", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnApagar_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Va a salir de la aplicación, ¿Desea continuar?", "Salir aplicación",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
-                btnInformacionApadrinado.IsEnabled = true;
-                btnInformacionApadrinado.Visibility = Visibility.Visible;
+                MessageBox.Show("Se va a salir de la aplicación.", "Salir aplicación", MessageBoxButton.OK, MessageBoxImage.Information);
+                Environment.Exit(1);
             }
             else
             {
-                btnInformacionApadrinado.IsEnabled = false;
-                btnInformacionApadrinado.Visibility = Visibility.Hidden;
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-        }*/
+        }
     }
 }
