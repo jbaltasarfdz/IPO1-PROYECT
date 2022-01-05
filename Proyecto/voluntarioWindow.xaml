@@ -42,7 +42,7 @@
 
         <ComboBox x:Name="cbListaVoluntarios" 
                   HorizontalAlignment="Stretch" 
-                  Height="28" Margin="58,257,851.6,405.4" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2">
+                  Height="28" Margin="58,257,851.6,405.4" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2" ToolTip="Seleccione un voluntario">
             <ComboBox.ItemContainerStyle>
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="Margin" Value="1"/>
@@ -122,7 +122,7 @@
                 Margin="827,72,67.6,570.4"  
                 Height="48" Width="179"
                 FontSize="16"
-                ToolTip="Pulse para añadir un animal" Click="btnAniadir_Click"
+                ToolTip="Pulse para añadir un voluntario" Click="btnAniadir_Click"
                 />
 
         <Button x:Name="btnEditar" Content="Editar información" 
@@ -130,7 +130,7 @@
                 Margin="827,152,67.6,485.4"
                 Height="50" Width="179"
                 FontSize="16"
-                ToolTip="Pulse para editar la información del animal" Click="btnEditar_Click"
+                ToolTip="Pulse para editar la información del voluntario" Click="btnEditar_Click"
                 />
 
         <Button x:Name="btnEliminar" Content="Eliminar" 
@@ -138,7 +138,7 @@
                 Margin="827,235,67.6,405.4"
                 Height="50"  Width="179"
                 FontSize="16"
-                ToolTip="Pulse para eliminar la información del animal" Click="btnEliminar_Click"
+                ToolTip="Pulse para eliminar la información del voluntario" Click="btnEliminar_Click"
                 />
 
         <TextBox  
@@ -159,7 +159,7 @@
             Margin="66,374,832.6,281.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.horario}"  
             Height="35" Width="175"
-            ToolTip="Introduzca la disponibilidad del voluntario" 
+            ToolTip="Introduzca la disponibilidad horaria del voluntario" 
             />
 
         <TextBox  
@@ -180,7 +180,7 @@
             Margin="542,219,356.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.ID}"  
             Height="36" Width="175" 
-            ToolTip="Inroduzca el identificador del voluntario" 
+            ToolTip="Introduzca el identificador del voluntario" 
             />
 
         <TextBox   

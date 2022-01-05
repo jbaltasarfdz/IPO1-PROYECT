@@ -42,7 +42,7 @@
 
         <ComboBox x:Name="cbListaPerros" 
                   HorizontalAlignment="Stretch" 
-                  Height="28" Margin="58,257,851.6,405.4" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2">
+                  Height="28" Margin="58,257,851.6,405.4" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2" ToolTip="Seleccione un animal">
             <ComboBox.ItemContainerStyle>
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="Margin" Value="1"/>
@@ -230,7 +230,7 @@
             Margin="65,532,832.6,122.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Enfermedades}" 
             Height="36" Width="176" 
-            ToolTip="Inntroduzca las enfermedades del animal" 
+            ToolTip="Introduzca las enfermedades del animal" 
             />
 
         <TextBox  

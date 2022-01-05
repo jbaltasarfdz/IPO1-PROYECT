@@ -13,8 +13,8 @@
 
         <GroupBox Header="Datos Personales"  Height="320" Margin="330,10,28.6,360.4"  Width="715"/>
 
-        <GroupBox Header="Ultimo acceso"  Height="140" Margin="37,361,28.6,189.4"  Width="1008">
-            <Label Content="Fecha"  Height="40" Margin="49,32,51,31.2"  Width="896"/>
+        <GroupBox Header="Último acceso"  Height="140" Margin="37,361,28.6,189.4"  Width="1008">
+            <Label Content="Fecha"  Height="40" Margin="49,32,51,31.2"  Width="896" ToolTip="Fecha del último acceso del administrador"/>
         </GroupBox>
 
         <Label Content="Nombre"  
@@ -32,33 +32,40 @@
         <TextBox 
             Height="23" Width="204.8"
             Margin="445,86,423.6,581.4" 
-            TextWrapping="Wrap" />
+            TextWrapping="Wrap"
+            ToolTip="Nombre del administrador"/>
 
         <TextBox  
             Height="23" Width="268.8"
             Margin="445,165,359.6,502.4" 
-            TextWrapping="Wrap"/>
+            TextWrapping="Wrap"
+            ToolTip="Apellidos del administrador"/>
 
         <TextBox  
             Height="23" Width="487"
             Margin="445,243,141.6,424.4" 
-            TextWrapping="Wrap"   />
+            TextWrapping="Wrap"
+            ToolTip="E-mail del administrador"/>
 
-        <Button x:Name="btnGestionListadoPerros" Content="Gestion Listado Perros" 
+        <Button x:Name="btnGestionListadoPerros" Content="Gestión Listado Perros" 
                 Margin="104,549,816.6,80.4" 
-                Click="btnGestionListadoPerros_Click" />
+                Click="btnGestionListadoPerros_Click"
+                ToolTip="Pulse para gestionar los animales de la protectora"/>
 
-        <Button x:Name="btnGestionVoluntarios" Content="Gestion Voluntarios" 
+        <Button x:Name="btnGestionVoluntarios" Content="Gestión Voluntarios" 
                 Margin="346,549,574.6,80.4" 
-                Click="btnGestionVoluntarios_Click" />
+                Click="btnGestionVoluntarios_Click"
+                ToolTip="Pulse para gestionar los voluntarios de la protectora"/>
 
-        <Button x:Name="btnGestionSocios" Content="Gestion Socios" 
+        <Button x:Name="btnGestionSocios" Content="Gestión Socios" 
                 Margin="581,549,339.6,80.4" 
-                Click="btnGestionSocios_Click"/>
+                Click="btnGestionSocios_Click"
+                ToolTip="Pulse para gestionar los socios de la protectora"/>
 
-        <Button x:Name="btnGestionAvisos" Content="Gestion Avisos" 
+        <Button x:Name="btnGestionAvisos" Content="Gestión Avisos" 
                 Margin="813,549,107.6,80.4" 
-                Click="btnGestionAvisos_Click"/>
+                Click="btnGestionAvisos_Click"
+                ToolTip="Pulse para gestionar los avisos de animales desaparecidos"/>
 
         <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                Margin="66,66,816.6,390.4"  

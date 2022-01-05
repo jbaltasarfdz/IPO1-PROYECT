@@ -42,7 +42,7 @@
 
         <ComboBox x:Name="cbListaSocios" 
                   HorizontalAlignment="Stretch" 
-                  Height="28" Margin="58,257,852,406" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2">
+                  Height="28" Margin="58,257,852,406" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2" ToolTip="Seleccione un socio">
             <ComboBox.ItemContainerStyle>
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="Margin" Value="1"/>
@@ -178,7 +178,7 @@
             Margin="547,219,322.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ID}"  
             Height="36" Width="204"
-            ToolTip="Inroduzca el identificador del socio" 
+            ToolTip="Introduzca el identificador del socio" 
             />
 
         <TextBox x:Name="txtCorreo"   
@@ -206,7 +206,7 @@
             Margin="67,527,830.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ayuda}" 
             Height="36" Width="176" 
-            ToolTip="Introduzca la ayuda del socio"
+            ToolTip="Introduzca la ayuda aportada por el socio"
             />
 
         <TextBox x:Name="txtOPago"  
