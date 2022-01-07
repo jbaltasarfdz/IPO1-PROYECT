@@ -7,23 +7,26 @@
         mc:Ignorable="d"
         Title="Adopta un Amigo - Ajustes" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="60"/>
-        </Grid.RowDefinitions>
-        <Label x:Name="lblVentanaAjustes" Content="Ajustes de la aplicación" Margin="329,25,323.6,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblIdioma" Content="Idioma" Margin="78,13.8,0,0" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Left"/>
-        <ComboBox x:Name="cmbIdioma" HorizontalAlignment="Left" Margin="78,44.2,0,0" VerticalAlignment="Top" Width="182" Grid.Row="1"/>
-        <Label Content="Color" HorizontalAlignment="Left" Margin="78,9.8,0,0" VerticalAlignment="Top" Grid.Row="2" RenderTransformOrigin="0.256,0.398"/>
-        <ComboBox x:Name="cmbColor" HorizontalAlignment="Left" Margin="78,40.8,0,0" VerticalAlignment="Top" Width="182" Grid.Row="2"/>
-        <Label Content="Tamaño de letra" HorizontalAlignment="Left" Margin="78,10.4,0,0" VerticalAlignment="Top" Grid.Row="3"/>
-        <ComboBox x:Name="cmbTamañoLetra" HorizontalAlignment="Left" Margin="78,41.4,0,0" VerticalAlignment="Top" Width="182" Grid.Row="3"/>
-        <Label Content="Seleccione el idioma en el que se desea visualizar el contenido de la aplicación" HorizontalAlignment="Left" Margin="329,26.2,0,0" Grid.Row="1" VerticalAlignment="Top" Height="52"/>
-        <Label Content="Si tiene alguna discapacidad visual, selecciónela y la aplicación se adaptará&#xD;&#xA;a sus capacidades" HorizontalAlignment="Left" Margin="329,22.8,0,0" Grid.Row="2" VerticalAlignment="Top" Height="53" Width="426"/>
-        <Label Content="Seleccione el tamaño de letra con el que desee visualizar la aplicación" HorizontalAlignment="Left" Margin="329,23.4,0,0" Grid.Row="3" VerticalAlignment="Top" Height="53" Width="426"/>
+  
+        <Label x:Name="lblVentanaAjustes" Content="Ajustes de la aplicación" Margin="361,22,291.6,0" VerticalAlignment="Top"/>
+        
+        <Label x:Name="lblIdioma" Content="Idioma" Margin="78,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
+        <Label Content="Color" HorizontalAlignment="Left" Margin="86,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.256,0.398"/>
+
+        <Label Content="Tamaño de letra" HorizontalAlignment="Left" Margin="86,158,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Seleccione el idioma en el que se desea visualizar el contenido de la aplicación" HorizontalAlignment="Left" Margin="329,73,0,0" VerticalAlignment="Top" Height="52"/>
+        
+        <Label Content="Si tiene alguna discapacidad visual, selecciónela y la aplicación se adaptará&#xD;&#xA;a sus capacidades" HorizontalAlignment="Left" Margin="300,280,0,0" VerticalAlignment="Top" Height="53" Width="426"/>
+        
+        <Label Content="Seleccione el tamaño de letra con el que desee visualizar la aplicación" HorizontalAlignment="Left" Margin="329,189,0,0" VerticalAlignment="Top" Height="53" Width="426"/>
+
+        <ComboBox x:Name="cmbIdioma" HorizontalAlignment="Left" Margin="78,73,0,0" VerticalAlignment="Top" Width="182"/>
+        
+        <ComboBox x:Name="cmbColor" HorizontalAlignment="Left" Margin="78,280,0,0" VerticalAlignment="Top" Width="182"/>
+       
+        <ComboBox x:Name="cmbTamañoLetra" HorizontalAlignment="Left" Margin="78,189,0,0" VerticalAlignment="Top" Width="182"/>
+        
     </Grid>
 </Window>

@@ -41,7 +41,7 @@ namespace Proyecto {
     public partial class settingsWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 17 "..\..\settingsWindow.xaml"
+        #line 11 "..\..\settingsWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label lblVentanaAjustes;
         
@@ -49,7 +49,7 @@ namespace Proyecto {
         #line hidden
         
         
-        #line 18 "..\..\settingsWindow.xaml"
+        #line 13 "..\..\settingsWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label lblIdioma;
         
@@ -57,7 +57,7 @@ namespace Proyecto {
         #line hidden
         
         
-        #line 19 "..\..\settingsWindow.xaml"
+        #line 25 "..\..\settingsWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox cmbIdioma;
         
@@ -65,7 +65,7 @@ namespace Proyecto {
         #line hidden
         
         
-        #line 21 "..\..\settingsWindow.xaml"
+        #line 27 "..\..\settingsWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox cmbColor;
         
@@ -73,7 +73,7 @@ namespace Proyecto {
         #line hidden
         
         
-        #line 23 "..\..\settingsWindow.xaml"
+        #line 29 "..\..\settingsWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox cmbTamañoLetra;
         

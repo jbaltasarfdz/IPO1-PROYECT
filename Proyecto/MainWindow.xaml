@@ -105,7 +105,7 @@
                 Margin="739,10,10,415.4"
                 Click="btnSettings_Click"
                 Height="45" Width="45" MinHeight="44" MinWidth="44" 
-                ToolTip="Ajustes"  >
+                ToolTip="Ajustes" BorderBrush="#00707070"  >
             <Button.Background>
                 <ImageBrush ImageSource="Images/settings.png" TileMode="FlipX" Stretch="Uniform"/>
             </Button.Background>
