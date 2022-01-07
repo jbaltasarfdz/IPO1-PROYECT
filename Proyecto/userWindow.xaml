@@ -22,32 +22,37 @@
                Height="42"  Width="113"/>
 
         <Label Content="Apellidos"  
-               Margin="445,124,256.6,525.4" 
+               Margin="445,119,256.6,530.4" 
                Height="40.8" Width="372"/>
 
         <Label Content="Correo Electrónico"  
                Margin="445,204,423.6,447.4" 
                Height="39.2" Width="204.8"/>
 
-        <TextBox 
-            Height="23" Width="204.8"
-            Margin="445,86,423.6,581.4" 
+        <TextBox
+            Margin="454,86,227.6,576.4" 
             TextWrapping="Wrap"
             ToolTip="Nombre del administrador"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
             Text="{Binding Nombre}"/>
-        
+
         <TextBox  
-            Height="23" Width="268.8"
-            Margin="445,165,359.6,502.4" 
+            Height="23"
+            Margin="454,165,227.6,502.4" 
             TextWrapping="Wrap"
             ToolTip="Apellidos del administrador"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
             Text="{Binding Apellidos}"/>
 
         <TextBox  
-            Height="23" Width="487"
-            Margin="445,243,141.6,424.4" 
+            Height="23"
+            Margin="454,243,227.6,424.4" 
             TextWrapping="Wrap"
             ToolTip="E-mail del administrador"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
             Text="{Binding Correo}"/>
 
         <Button x:Name="btnGestionListadoPerros" Content="Gestión Listado Perros" 

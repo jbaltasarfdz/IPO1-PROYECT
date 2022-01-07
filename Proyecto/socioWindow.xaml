@@ -83,8 +83,8 @@
                Height="40" Width="51"
                />
 
-        <Label Content="Telefono"  
-               Margin="48,337,932.6,313.4"  
+        <Label Content="Teléfono"  
+               Margin="527,78,453.6,572.4"  
                Height="40" Width="92.8"
                />
 
@@ -94,7 +94,7 @@
                />
 
         <Label Content="Edad" 
-               Margin="257,414,762.6,236.4" 
+               Margin="260,414,759.6,236.4" 
                Height="40" Width="54" 
                />
 
@@ -104,8 +104,8 @@
                />
 
         <Label Content="Tipo de socio"  
-               Margin="141,573,598.6,78.4"  
-               Height="39" Width="334.4"
+               Margin="56,338,798.6,313.4"  
+               Height="39"
                />
 
         <Label Content="Opcion pago" 
@@ -162,7 +162,7 @@
             />
 
         <TextBox x:Name="txtTelefono"  
-            Margin="67,372,831.6,283.4" 
+            Margin="547,118,351.6,537.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.telefono}"  
             Height="35" Width="175"
             ToolTip="Introduzca el teléfono del socio" 
@@ -176,16 +176,16 @@
             />
 
         <TextBox x:Name="txtIDSocio"  
-            Margin="547,219,322.6,435.4" 
+            Margin="547,219,351.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ID}"  
-            Height="36" Width="204"
+            Height="36"
             ToolTip="Introduzca el identificador del socio" 
             />
 
         <TextBox x:Name="txtCorreo"   
-            Margin="67,451,830.6,203.4" 
+            Margin="67,451,831.6,203.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.correo}"  
-            Height="36" Width="176" 
+            Height="36" 
             ToolTip="Introduzca el e-mail del socio"
             />
 
@@ -197,23 +197,23 @@
             />
 
         <TextBox x:Name="txtTipoSocio"  
-            Margin="157,612,740.6,43.4" 
+            Margin="67,372,831.6,283.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.tipo}"  
-            Height="35" Width="176" 
+            Height="35" 
             ToolTip="Introduzca el tipo de socio" 
             />
 
         <TextBox x:Name="txtAyuda" 
-            Margin="67,527,830.6,127.4" 
+            Margin="67,527,831.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ayuda}" 
-            Height="36" Width="176" 
+            Height="36" 
             ToolTip="Introduzca la ayuda aportada por el socio"
             />
 
         <TextBox x:Name="txtOPago"  
-            Margin="280,527,617.6,127.4" 
+            Margin="280,527,618.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.pago}" 
-            Height="36" Width="176" 
+            Height="36" 
             ToolTip="Introduzca la forma de pago del socio"
             />
 
@@ -231,14 +231,14 @@
             Source="{Binding ElementName=cbListaSocios, Path=SelectedItem.Imagen}" Stretch="Fill"
             />
 
-        <Button x:Name="btnInfo" Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
+        <Button x:Name="btnInfo" Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070" ToolTip="Pulse para consultar la funcionalidad de la aplicación" >
             <Button.Background>
                 <ImageBrush ImageSource="Images/ayuda.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
+        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070" ToolTip="Pulse si desea finalizar la aplicación" >
             <Button.Background>
                 <ImageBrush ImageSource="Images/apagar.png" 
                         Stretch="Uniform"/>

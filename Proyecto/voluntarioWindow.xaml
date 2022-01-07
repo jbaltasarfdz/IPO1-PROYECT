@@ -163,9 +163,8 @@
             />
 
         <TextBox  
-            Margin="542,119,327.6,514.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.telefono}"  
-            Height="57" Width="204" 
+            Margin="542,119,327.6,536.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.telefono}" Width="204" 
             ToolTip="Introduzca el teléfono del voluntario" 
             />
 
@@ -177,9 +176,9 @@
             />
 
         <TextBox  
-            Margin="542,219,356.6,435.4" 
+            Margin="542,219,327.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.ID}"  
-            Height="36" Width="175" 
+            Height="36" 
             ToolTip="Introduzca el identificador del voluntario" 
             />
 
@@ -218,14 +217,14 @@
             Source="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.Imagen}" Stretch="Fill"
             />
 
-        <Button x:Name="btnInfo" Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
+        <Button x:Name="btnInfo" Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070" ToolTip="Pulse para consultar la funcionalidad de la aplicación" >
             <Button.Background>
                 <ImageBrush ImageSource="Images/ayuda.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
+        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070" ToolTip="Pulse si desea finalizar la aplicación" >
             <Button.Background>
                 <ImageBrush ImageSource="Images/apagar.png" 
                         Stretch="Uniform"/>
