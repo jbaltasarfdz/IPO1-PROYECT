@@ -60,6 +60,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Aviso.cs" />
+    <Compile Include="avisoWindow.xaml.cs">
+      <DependentUpon>avisoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="voluntarioWindow.xaml.cs">
       <DependentUpon>voluntarioWindow.xaml</DependentUpon>
     </Compile>
@@ -79,6 +83,10 @@
       <DependentUpon>userWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <Page Include="avisoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="voluntarioWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -183,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xmls\xmlAvisos.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

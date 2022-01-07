@@ -47,7 +47,8 @@ namespace Proyecto
 
         private void btnGestionAvisos_Click(object sender, RoutedEventArgs e)
         {
-
+            avisoWindow avisowindow = new avisoWindow();
+            avisowindow.Show();
         }
 
         private void btnApagar_Click(object sender, RoutedEventArgs e)
