@@ -7,7 +7,7 @@
     NombreDueño="Carlos"
     Telefono="111222333"
     Correo="CarlosGG@correoprueba.com"
-    Imagen="/Perros/Perro1.jpg"
+    Imagen="/PerrosPerdidos/Perro1.jpg"
   />
 
   <Aviso
@@ -16,6 +16,6 @@
     NombreDueño="Jesus"
     Telefono="999334455"
     Correo="JesusGG@correoprueba.com"
-    Imagen="/Perros/Perro1.jpg"
+    Imagen="/PerrosPerdidos/Perro2.jpg"
   />
 </Avisos>

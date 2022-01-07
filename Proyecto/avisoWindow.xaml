@@ -24,7 +24,7 @@
                    RadiusY="5" RadiusX="5" Opacity="0.41"
                    Stroke="Black"/>
 
-        <ListBox x:Name="lstListaPerrosPerdidos" HorizontalAlignment="Stretch" Height="530" Width="308.8" Margin="60,65,704.6,95.4" VerticalAlignment="Stretch" ItemsSource="{Binding}">
+        <ListBox x:Name="lstAvisos" HorizontalAlignment="Stretch" Height="530" Width="308.8" Margin="60,65,704.6,95.4" VerticalAlignment="Stretch" ItemsSource="{Binding}">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="ListBoxItem">
                     <Setter Property="Margin" Value="2"/>
@@ -51,6 +51,26 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
 
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="miAniadirAvisoLB" Header="Añadir aviso" Click="miAniadirAvisoLB_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Images/add_c.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="miEditarAvisoLB" Header="Editar aviso" Click="miEditarAvisoLB_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Images/editar.jpg"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="miEliminarItemLB" Header="Eliminar aviso" Click="miEliminarItemLB_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Images/remove_c.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+
         </ListBox>
 
         <GroupBox Header="Datos Perro" 
@@ -63,7 +83,7 @@
                   Margin="434,371,89.6,125.4" 
                   Height="194.4" Width="550"/>
 
-        <Image Source="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Imagen}"
+        <Image Source="{Binding ElementName=lstAvisos, Path=SelectedItem.Imagen}"
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
             Height="155" Width="123"
             Margin="476,141,474.6,394.4" Stretch="Fill"/>
@@ -91,27 +111,27 @@
         <TextBox x:Name="txtNombrePerro"  
             Height="32" Width="309"
             Margin="639,140,125.6,518.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.NombrePerro}"/>
+            TextWrapping="Wrap" Text="{Binding ElementName=lstAvisos, Path=SelectedItem.NombrePerro}"/>
 
         <TextBox x:Name="txtDescripcion"  
             Height="101" Width="309"
             Margin="639,217,125.6,372.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Descripcion}"/>
+            TextWrapping="Wrap" Text="{Binding ElementName=lstAvisos, Path=SelectedItem.Descripcion}"/>
 
         <TextBox x:Name="txtNombreDueño"  
             Height="32" Width="187"
             Margin="476,442,410.6,216.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.NombreDueño}"  />
+            TextWrapping="Wrap" Text="{Binding ElementName=lstAvisos, Path=SelectedItem.NombreDueño}"  />
         
         <TextBox x:Name="txtTelefono"  
             Height="32" Width="188"
             Margin="730,442,155.6,216.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Telefono}"  />
+            TextWrapping="Wrap" Text="{Binding ElementName=lstAvisos, Path=SelectedItem.Telefono}"  />
         
         <TextBox x:Name="txtCorreo"  
             Height="32" Width="296"
             Margin="476,514,301.6,144.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Correo}" />
+            TextWrapping="Wrap" Text="{Binding ElementName=lstAvisos, Path=SelectedItem.Correo}" />
 
         <Button x:Name="btnInfo" Margin="79,617,953.6,37.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
             <Button.Background>

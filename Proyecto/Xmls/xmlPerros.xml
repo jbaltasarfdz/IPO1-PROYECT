@@ -9,7 +9,7 @@
     Sexo="Macho"
     Chip="039DS4"
     Edad="5"
-    Tamanio="Grande"
+    Tamanio="Pequeño"
     PPP="No"
     Enfermedades="Ninguna"
     Vacunado="Esta vacunado"
@@ -30,6 +30,6 @@
     Enfermedades="Ninguna"
     Vacunado="Esta vacunado"
     Descripcion="Es un perro timido pero muy cariñoso"
-    Imagen="/Perros/Perro1.jpg"
+    Imagen="/Perros/Perro2.jpg"
   />
 </Perros>

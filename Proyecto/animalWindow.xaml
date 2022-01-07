@@ -157,7 +157,7 @@
                 Height="36" Width="40.8"
                 IsEnabled="True" Visibility="Visible"
                 BorderBrush="#00707070" Foreground="#00707070"
-                ToolTip="Perro apadrinado por Juan"
+                ToolTip="Perro apadrinado por Juan" Click="btnInformacionApadrinado_Click"
                 >
             <Button.Background>
                 <ImageBrush ImageSource="Images/informacion.png" Stretch="Uniform"/>

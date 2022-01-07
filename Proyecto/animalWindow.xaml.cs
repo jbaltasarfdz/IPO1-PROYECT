@@ -149,5 +149,20 @@ namespace Proyecto
                 MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
+
+        private void btnInformacionApadrinado_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Va a ver la información del padrino/madrina del perro, ¿Desea continuar?", "Ventana Padrinos",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se va a acceder a la ventana de padrinos/madrinas.", "Salir aplicación", MessageBoxButton.OK, MessageBoxImage.Information);
+                padrinoWindow padrinowindow = new padrinoWindow();
+                padrinowindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
     }
 }

@@ -64,6 +64,10 @@
     <Compile Include="avisoWindow.xaml.cs">
       <DependentUpon>avisoWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Padrino.cs" />
+    <Compile Include="padrinoWindow.xaml.cs">
+      <DependentUpon>padrinoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="voluntarioWindow.xaml.cs">
       <DependentUpon>voluntarioWindow.xaml</DependentUpon>
     </Compile>
@@ -84,6 +88,10 @@
     </Compile>
     <Compile Include="Usuario.cs" />
     <Page Include="avisoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="padrinoWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -194,6 +202,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Xmls\xmlAvisos.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\remove_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\editar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Carlos.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

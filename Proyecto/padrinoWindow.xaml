@@ -1,100 +1,120 @@
-﻿<Window x:Class="Proyecto.userWindow"
+﻿<Window x:Class="Proyecto.padrinoWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto"
         mc:Ignorable="d"
-        Title="Adopta un Amigo - Información del Usuario" Height="720" Width="1080" WindowState="Maximized" ResizeMode="CanResize" MinWidth="1080" MinHeight="720">
+        Title="Adopta un Amigo - Información del Padrino" Height="720" Width="1080" WindowState="Maximized" ResizeMode="CanResize" MinWidth="1080" MinHeight="720">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Images/fondo_usuario.png"/>
         </Grid.Background>
 
-        <GroupBox Header="Datos Personales"  Height="320" Margin="330,10,28.6,360.4"  Width="715"/>
+        <GroupBox Header="Datos Personales" 
+                  Margin="330,10,28.6,334.4"  
+                  Height="346.4" Width="715"/>
 
-        <GroupBox Header="Último acceso"  Height="140" Margin="37,361,28.6,189.4"  Width="1008">
-            <Label Content="{Binding FechaAcceso}" Height="40" Margin="49,32,51,31.2"  Width="896" ToolTip="Fecha del último acceso del administrador"/>
-        </GroupBox>
+        <GroupBox Header="Datos Financieros" 
+                  Margin="37,361,28.6,135.4" 
+                  Height="194.4" Width="1008"/>
 
         <Label Content="Nombre"  
-               Margin="445,44,515.6,604.4" 
+               Margin="380,44,580.6,604.4" 
                Height="42"  Width="113"/>
 
         <Label Content="Apellidos"  
-               Margin="445,119,256.6,530.4" 
+               Margin="380,124,321.6,525.4" 
                Height="40.8" Width="372"/>
 
         <Label Content="Correo Electrónico"  
-               Margin="445,204,423.6,447.4" 
+               Margin="380,261,488.6,390.4" 
                Height="39.2" Width="204.8"/>
 
+        <Label Content="Telefono"  
+               Margin="380,193,488.6,458.4" 
+               Height="39.2" Width="204.8"/>
+
+        <Label Content="Nº Cuenta" 
+               Height="36" Width="232"
+               Margin="66,400,775.6,254.4"  />
+
+        <Label Content="Ayuda"  
+               Height="42" Width="224"
+               Margin="66,472,783.6,176.4"/>
+
+        <Label Content="Tipo de Pago" 
+               Height="40" Width="254"
+               Margin="559,400,260.6,250.4"/>
+
+
         <TextBox
-            Margin="454,86,227.6,576.4" 
             Height="28" Width="392"
+            Margin="402,86,279.6,576.4" 
             TextWrapping="Wrap"
-            ToolTip="Nombre del administrador"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
-            Text="{Binding Nombre}"/>
+            ToolTip="Nombre del padrino/madrina"
+            Text="{Binding nombre}"/>
 
         <TextBox  
-            Margin="454,165,227.6,502.4" 
             Height="23" Width="392"
+            Margin="402,165,279.6,502.4" 
             TextWrapping="Wrap"
-            ToolTip="Apellidos del administrador"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
-            Text="{Binding Apellidos}"/>
+            ToolTip="Apellidos del padrino/madrina"
+            Text="{Binding apellidos}"/>
 
         <TextBox  
-            Margin="454,243,227.6,424.4" 
             Height="23" Width="392"
+            Margin="402,232,279.6,435.4" 
             TextWrapping="Wrap"
-            ToolTip="E-mail del administrador"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
-            Text="{Binding Correo}"/>
+            ToolTip="Apellidos del padrino/madrina"
+            Text="{Binding telefono}"/>
 
-        <Button x:Name="btnGestionListadoPerros" Content="Gestión Listado Perros" 
-                Margin="104,549,816.6,80.4" 
-                
-                Click="btnGestionListadoPerros_Click"
-                ToolTip="Pulse para gestionar los animales de la protectora"/>
+        <TextBox  
+            Height="23" Width="392"
+            Margin="402,300,279.6,367.4" 
+            TextWrapping="Wrap"
+            ToolTip="E-mail del padrino/madrina"
+            Text="{Binding correo}"/>
 
-        <Button x:Name="btnGestionVoluntarios" Content="Gestión Voluntarios" 
-                Margin="346,549,574.6,80.4" 
-                Click="btnGestionVoluntarios_Click"
-                ToolTip="Pulse para gestionar los voluntarios de la protectora"/>
-
-        <Button x:Name="btnGestionSocios" Content="Gestión Socios" 
-                Margin="581,549,339.6,80.4" 
-                Click="btnGestionSocios_Click"
-                ToolTip="Pulse para gestionar los socios de la protectora"/>
-
-        <Button x:Name="btnGestionAvisos" Content="Gestión Avisos" 
-                Margin="813,549,107.6,80.4" 
-                Click="btnGestionAvisos_Click"
-                ToolTip="Pulse para gestionar los avisos de animales desaparecidos"/>
+        <TextBox 
+            Height="31" Width="331"
+            Margin="97,436,645.6,223.4" 
+            ToolTip="Numero de cuenta del padrino/madrina"
+            TextWrapping="Wrap" Text="{Binding cuenta}" />
+        
+        <TextBox  
+            Height="31" Width="331"
+            Margin="97,507,645.6,152.4" 
+            ToolTip="Ayuda económica del padrino/madrina"
+            TextWrapping="Wrap" Text="{Binding ayuda}"/>
+        
+        <TextBox  
+            Height="31" Width="321"
+            Margin="584,436,168.6,223.4" 
+            ToolTip="Tipo de pago del padrino/madrina"
+            TextWrapping="Wrap" Text="{Binding pago}" />
 
         <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                Margin="66,66,816.6,390.4"  
                Height="234.4" Width="191" 
-               Source="Images/Carlos.jpeg" Stretch="Fill"/>
+               Source="Images/Cogo.jpg" Stretch="Fill"/>
 
-        <Button x:Name="btnInfo" Margin="28,626,1004.6,28.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
+        <Button x:Name="btnInfo" Margin="66,617,966.6,37.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/ayuda.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnApagar" Margin="1004,626,28.6,28.4" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
+        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/apagar.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
+        
+        
+        
 
     </Grid>
 

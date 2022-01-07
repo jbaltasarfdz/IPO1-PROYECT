@@ -20,15 +20,15 @@ namespace Proyecto
     /// </summary>
     public partial class avisoWindow : Window
     {
-        private List<Aviso> listadoPerrosPerdidos;
+        private List<Aviso> listadoAvisos;
 
         public avisoWindow()
         {
             InitializeComponent();
 
-            listadoPerrosPerdidos = CargarListaAvisos();
+            listadoAvisos = CargarListaAvisos();
 
-            DataContext = listadoPerrosPerdidos;
+            DataContext = listadoAvisos;
 
 
         }
@@ -69,6 +69,58 @@ namespace Proyecto
             {
                 MessageBox.Show("Se va a salir de la aplicación.", "Salir aplicación", MessageBoxButton.OK, MessageBoxImage.Information);
                 Environment.Exit(1);
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void miAniadirAvisoLB_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Va a añadir un nuevo aviso a la base de datos, ¿Desea continuar?", "Añadir Aviso",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se ha añadido correctamente un nuevo aviso.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+                var nuevoAviso = new Aviso("...", "...", "...", "...", "...",
+                                new Uri("Images/silueta.jpg", UriKind.Relative));
+                // Añadimos una nueva película a la lista de películas (listadoPeliculas)
+                listadoAvisos.Add(nuevoAviso);
+                // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
+                // queden actualizadas
+                lstAvisos.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void miEditarAvisoLB_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Va a editar la información sobre el aviso de la base de datos, ¿Desea continuar?", "Editar Aviso",
+              MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se ha editado correctamente la información correspondiente al aviso seleccionado.", "Resultado",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+                lstAvisos.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Se ha cancelado la acción", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void miEliminarItemLB_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Va a eliminar un aviso de la base de datos, ¿Desea continuar?", "Eliminar Aviso",
+               MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Se ha eliminado correctamente el aviso seleccionado.", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+                listadoAvisos.RemoveAt(lstAvisos.SelectedIndex);
+                // Actualizaremos tanto el ListBox como el DataGrid para que las dos vistas
+                // queden actualizadas
+                lstAvisos.Items.Refresh();
             }
             else
             {
