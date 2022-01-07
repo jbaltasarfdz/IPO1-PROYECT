@@ -105,7 +105,7 @@
 
         <Label Content="Tipo de socio"  
                Margin="56,338,798.6,313.4"  
-               Height="39"
+               Height="39" Width="219.2"
                />
 
         <Label Content="Opcion pago" 
@@ -178,14 +178,14 @@
         <TextBox x:Name="txtIDSocio"  
             Margin="547,219,351.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ID}"  
-            Height="36"
+            Height="36" Width="175.2"
             ToolTip="Introduzca el identificador del socio" 
             />
 
         <TextBox x:Name="txtCorreo"   
             Margin="67,451,831.6,203.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.correo}"  
-            Height="36" 
+            Height="36" Width="175.2"
             ToolTip="Introduzca el e-mail del socio"
             />
 
@@ -199,21 +199,21 @@
         <TextBox x:Name="txtTipoSocio"  
             Margin="67,372,831.6,283.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.tipo}"  
-            Height="35" 
+            Height="35" Width="175.2"
             ToolTip="Introduzca el tipo de socio" 
             />
 
         <TextBox x:Name="txtAyuda" 
             Margin="67,527,831.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.ayuda}" 
-            Height="36" 
+            Height="36"  Width="175.2"
             ToolTip="Introduzca la ayuda aportada por el socio"
             />
 
         <TextBox x:Name="txtOPago"  
             Margin="280,527,618.6,127.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaSocios, Path=SelectedItem.pago}" 
-            Height="36" 
+            Height="36" Width="175.2"
             ToolTip="Introduzca la forma de pago del socio"
             />
 
@@ -244,8 +244,6 @@
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
-
-
 
     </Grid>
 

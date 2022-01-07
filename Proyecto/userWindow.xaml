@@ -31,6 +31,7 @@
 
         <TextBox
             Margin="454,86,227.6,576.4" 
+            Height="28" Width="392"
             TextWrapping="Wrap"
             ToolTip="Nombre del administrador"
             HorizontalAlignment="Stretch"
@@ -38,8 +39,8 @@
             Text="{Binding Nombre}"/>
 
         <TextBox  
-            Height="23"
             Margin="454,165,227.6,502.4" 
+            Height="23" Width="392"
             TextWrapping="Wrap"
             ToolTip="Apellidos del administrador"
             HorizontalAlignment="Stretch"
@@ -47,8 +48,8 @@
             Text="{Binding Apellidos}"/>
 
         <TextBox  
-            Height="23"
             Margin="454,243,227.6,424.4" 
+            Height="23" Width="392"
             TextWrapping="Wrap"
             ToolTip="E-mail del administrador"
             HorizontalAlignment="Stretch"
@@ -57,6 +58,7 @@
 
         <Button x:Name="btnGestionListadoPerros" Content="Gestión Listado Perros" 
                 Margin="104,549,816.6,80.4" 
+                
                 Click="btnGestionListadoPerros_Click"
                 ToolTip="Pulse para gestionar los animales de la protectora"/>
 
@@ -80,14 +82,14 @@
                Height="234.4" Width="191" 
                Source="Images/OIP.jpg" Stretch="Fill"/>
 
-        <Button x:Name="btnInfo" Margin="66,617,966.6,37.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
+        <Button x:Name="btnInfo" Margin="28,626,1004.6,28.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/ayuda.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
+        <Button x:Name="btnApagar" Margin="1004,626,28.6,28.4" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/apagar.png" 
                         Stretch="Uniform"/>

@@ -164,7 +164,8 @@
 
         <TextBox  
             Margin="542,119,327.6,536.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.telefono}" Width="204" 
+            TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.telefono}" 
+            Height="35.2" Width="204" 
             ToolTip="Introduzca el teléfono del voluntario" 
             />
 
@@ -178,7 +179,7 @@
         <TextBox  
             Margin="542,219,327.6,435.4" 
             TextWrapping="Wrap" Text="{Binding ElementName=cbListaVoluntarios, Path=SelectedItem.ID}"  
-            Height="36" 
+            Height="36" Width="204"
             ToolTip="Introduzca el identificador del voluntario" 
             />
 

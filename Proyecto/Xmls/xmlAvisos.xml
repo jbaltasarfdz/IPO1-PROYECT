@@ -2,28 +2,20 @@
 
 <Avisos>
   <Aviso
-    nombre="Doge"
-    sexo="Macho"
-    raza="Pitbull"
-    tamanio="Grande"
-    descripcion="Color gris y collar rojo"
-    fechaPerdida="1/1/2022"
-    zonaPerdida="Zona universitaria de Ciudad Real"
-    telefono="111222333"
-    correo="PepeGG@correoprueba.com"
+    NombrePerro="Doge"
+    Descripcion="Color gris y collar rojo"
+    NombreDueño="Carlos"
+    Telefono="111222333"
+    Correo="CarlosGG@correoprueba.com"
     Imagen="/Perros/Perro1.jpg"
   />
 
   <Aviso
-    nombre="Pancho"
-    sexo="Macho"
-    raza="Dálmata"
-    tamanio="Mediano"
-    descripcion="Collar azul y con una mancha en forma de corazón en la cabeza"
-    fechaPerdida="31/12/2021"
-    zonaPerdida="Zona centro de Ciudad Real"
-    telefono="999000999"
-    correo="LourdesFL@correoprueba.com"
+    NombrePerro="Zeusito"
+    Descripcion="Color gris y collar rojo"
+    NombreDueño="Jesus"
+    Telefono="999334455"
+    Correo="JesusGG@correoprueba.com"
     Imagen="/Perros/Perro1.jpg"
   />
 </Avisos>

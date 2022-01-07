@@ -115,25 +115,6 @@ namespace Proyecto
             }
         }
 
-       /* private void txtEstado_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (txtEstado.Text == "Apadrinado" || txtEstado.Text == "apadrinado" || txtEstado.Text == "APADRINADO")
-            {
-                btnInformacionApadrinado.IsEnabled = true;
-                btnInformacionApadrinado.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                btnInformacionApadrinado.IsEnabled = false;
-                btnInformacionApadrinado.Visibility = Visibility.Hidden;
-            }
-        } */
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void btnInfo_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Ventana para gestionar la información de los socios de la protectora", "Información", MessageBoxButton.OK, MessageBoxImage.Information);

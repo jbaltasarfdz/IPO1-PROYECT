@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto"
         mc:Ignorable="d"
-        Title="Adopta un Amigo - Avisos" Height="720" Width="1080" WindowState="Maximized" ResizeMode="CanResize" MinWidth="1080" MinHeight="720">
+        Title="Adopta un Amigo - PerrosPerdidos" Height="720" Width="1080" WindowState="Maximized" ResizeMode="CanResize" MinWidth="1080" MinHeight="720">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Images/fondo.jpg"/>
@@ -19,240 +19,114 @@
 
         <Rectangle Fill="#FF373A34" 
                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                   Margin="38,59,831.6,393.4" 
-                   Width="204" Height="237.6"
+                   Margin="407,65,55.6,95.4"
+                   Height="530.4" Width="611.2"
                    RadiusY="5" RadiusX="5" Opacity="0.41"
                    Stroke="Black"/>
 
-
-
-        <GroupBox Header="Descripción" 
-                  Margin="517,302,55.6,97.4"  
-                  Height="291.2" Width="501"
-                  />
-
-        <GroupBox Header="Datos Principales"  
-                  Margin="255,44,289.6,393.4" 
-                  Height="253" Width="529"
-                  />
-
-        <GroupBox Header="Otros Datos"  
-                  Margin="38,302,596.6,24.4" 
-                  Height="364" Width="440"/>
-
-        <ComboBox x:Name="cbListaAvisos" 
-                  HorizontalAlignment="Stretch" 
-                  Height="28" Margin="58,257,851.6,405.4" VerticalAlignment="Stretch" Width="164" ItemsSource="{Binding}" SelectedIndex="0" AlternationCount="2" ToolTip="Seleccione un perro">
-            <ComboBox.ItemContainerStyle>
-                <Style TargetType="ComboBoxItem">
-                    <Setter Property="Margin" Value="1"/>
+        <ListBox x:Name="lstListaPerrosPerdidos" HorizontalAlignment="Stretch" Height="530" Width="308.8" Margin="60,65,704.6,95.4" VerticalAlignment="Stretch" ItemsSource="{Binding}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Margin" Value="2"/>
                     <Style.Triggers>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Foreground" Value="Purple"/>
                             <Setter Property="FontWeight" Value="Bold"/>
-                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderBrush" Value="MediumPurple"/>
                             <Setter Property="BorderThickness" Value="3"/>
                         </Trigger>
                         <Trigger Property="ItemsControl.AlternationIndex" Value="1">
-                            <Setter Property="Background" Value="LightCyan"/>
+                            <Setter Property="Background" Value="LightCoral"/>
                         </Trigger>
                     </Style.Triggers>
                 </Style>
-            </ComboBox.ItemContainerStyle>
+            </ListBox.ItemContainerStyle>
 
-            <ComboBox.ItemTemplate>
+            <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Image Width="32" Height="37"
-                            Source="{Binding Imagen}"/>
-                        <TextBlock VerticalAlignment="Center"
-                            Margin="10,0,0,0"
-                            Text="{Binding Nombre}" />
+                        <Image Width="60" Height="74" Source="{Binding Imagen}"/>
+                        <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding NombrePerro}"/>
                     </StackPanel>
                 </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
+            </ListBox.ItemTemplate>
 
-        <Label Content="Nombre"  
-               Margin="287,80,706.6,570.4"  
-               Width="80" Height="40" 
-               />
+        </ListBox>
 
-        <Label Content="Sexo"  
-               Margin="272,333,750.6,317.4"  
-               Height="40" Width="51"
-               />
+        <GroupBox Header="Datos Perro" 
+                  Height="264" Width="550.4" 
+                  Margin="434,78,89.6,348.4">
 
-        <Label Content="Raza"  
-               Margin="53,333,969.6,317.4"  
-               Height="40" Width="51"
-               />
+        </GroupBox>
 
-        <Label Content="Tamaño" 
-               Margin="272,412,726.6,239.4" 
-               Height="39" Width="75"
-               />
+        <GroupBox Header="Datos Contacto"  
+                  Margin="434,371,89.6,125.4" 
+                  Height="194.4" Width="550"/>
 
-        <Label Content="Edad" 
-               Margin="53,411,966.6,239.4" 
-               Height="40" Width="54" 
-               />
+        <Image Source="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Imagen}"
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Height="155" Width="123"
+            Margin="476,141,474.6,394.4" Stretch="Fill"/>
 
-        <Label Content="Fecha de entrada"  
-               Margin="529,80,368.6,570.4" 
-               Height="40" Width="176"/>
+        <Label Content="Nombre" 
+               Margin="623,105,192.6,550.4"
+               Height="35.2" Width="258"/>
 
-        <Label Content="Chip"  
-               Margin="529,181,495.6,469.4" 
-               Height="40" Width="49" 
-               />
+        <Label Content="Descripcion" 
+               Margin="623,183,171.6,473.4"
+               Height="34.4" Width="279"/>
 
-        <Label Content="PPP"  
-               Margin="53,573,975.6,78.4"  
-               Height="39" Width="45"
-               />
+        <Label Content="Dueño" 
+               Margin="457,406,452.6,251.4" 
+               Height="32.8" Width="164"/>
 
-        <Label Content="Vacunado" 
-               Margin="272,494,709.6,156.4" 
-               Height="40" Width="92"
-               />
+        <Label Content="Correo" 
+               Height="36" Width="169"
+               Margin="457,478,447.6,176.4" />
 
-        <Label Content="Enfermedades"  
-               Margin="53,494,870.6,157.4" 
-               Height="39" Width="150"
-               />
+        <Label Content="Teléfono" 
+               Height="36" Width="196"
+               Margin="712,406,165.6,248.4" />
 
-        <Label Content="Estado"  
-               Margin="287,181,721.6,469.4"  
-               Height="40" Width="65"
-               />
+        <TextBox x:Name="txtNombrePerro"  
+            Height="32" Width="309"
+            Margin="639,140,125.6,518.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.NombrePerro}"/>
 
-        <Button x:Name="btnAniadir" Content="Añadir" 
-                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="827,72,67.6,570.4"  
-                Height="48" Width="179"
-                FontSize="16"
-                ToolTip="Pulse para añadir un perro" Click="btnAniadir_Click"
-                />
+        <TextBox x:Name="txtDescripcion"  
+            Height="101" Width="309"
+            Margin="639,217,125.6,372.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Descripcion}"/>
 
-        <Button x:Name="btnEditar" Content="Editar información" 
-                HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-                Margin="827,152,67.6,485.4"
-                Height="50" Width="179"
-                FontSize="16"
-                ToolTip="Pulse para editar la información del perro" Click="btnEditar_Click"
-                />
+        <TextBox x:Name="txtNombreDueño"  
+            Height="32" Width="187"
+            Margin="476,442,410.6,216.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.NombreDueño}"  />
+        
+        <TextBox x:Name="txtTelefono"  
+            Height="32" Width="188"
+            Margin="730,442,155.6,216.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Telefono}"  />
+        
+        <TextBox x:Name="txtCorreo"  
+            Height="32" Width="296"
+            Margin="476,514,301.6,144.4" 
+            TextWrapping="Wrap" Text="{Binding ElementName=lstListaPerrosPerdidos, Path=SelectedItem.Correo}" />
 
-        <Button x:Name="btnEliminar" Content="Eliminar" 
-                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="827,235,67.6,405.4"
-                Height="50"  Width="179"
-                FontSize="16"
-                ToolTip="Pulse para eliminar la información del perro" Click="btnEliminar_Click"
-                />
-
-        <TextBox  
-            Margin="303,119,595.6,536.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Nombre}"  
-            Height="35" Width="175" 
-            ToolTip="Introduzca el nombre del perro"
-            />
-
-        <TextBox x:Name="txtEstado"  
-            Margin="303,219,595.6,435.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Estado}"  
-            Height="36" Width="175"  
-            ToolTip="Introduzca el estado del perro"
-            />
-
-        <TextBox  
-            Margin="66,374,832.6,281.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Raza}"  
-            Height="35" Width="175"
-            ToolTip="Introduzca la raza del perro" 
-            />
-
-        <TextBox  
-            Margin="529,119,340.6,536.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.FechaEntrada}" Width="204" 
-            ToolTip="Introduzca la fecha de entrada del perro"
-            />
-
-        <TextBox  
-            Margin="286,374,612.6,280.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Sexo}"  
-            Height="36" Width="175"
-            ToolTip="Introduzca el sexo del perro" 
-            />
-
-        <TextBox  
-            Margin="529,219,340.6,435.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Chip}"  
-            Height="36" 
-            ToolTip="Introduzca el número de chip del perro" 
-            />
-
-        <TextBox   
-            Margin="65,451,832.6,203.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Edad}"  
-            Height="36" Width="176" 
-            ToolTip="Introduzca la edad del perro" 
-            />
-
-        <TextBox  
-            Margin="285,451,612.6,203.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Tamanio}" 
-            Height="36" Width="176" 
-            ToolTip="Introduzca el tamaño del perro" />
-
-        <TextBox  
-            Margin="66,612,831.6,43.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.PPP}"  
-            Height="35" Width="176" 
-            ToolTip="Introduzca si es un perro PPP" 
-            />
-
-        <TextBox 
-            Margin="65,532,832.6,122.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Enfermedades}" 
-            Height="36" Width="176" 
-            ToolTip="Introduzca las enfermedades del perro" 
-            />
-
-        <TextBox  
-            Margin="285,532,612.6,122.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Vacunado}" 
-            Height="36" Width="176" 
-            ToolTip="Introduzca si está vacunado el perro" 
-            />
-
-        <TextBox   
-            Margin="542,347,77.6,122.4" 
-            TextWrapping="Wrap" Text="{Binding ElementName=cbListaPerros, Path=SelectedItem.Descripcion}"  
-            Height="221" Width="454"  
-            ToolTip="Introduzca una descripción del perro"
-            />
-
-        <Image 
-            HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-            Margin="58,68,851.6,441.4"
-            Height="177" Width="164" 
-            Source="{Binding ElementName=cbListaPerros, Path=SelectedItem.Imagen}" Stretch="UniformToFill"
-            />
-        <Button x:Name="btnInfo" Margin="517,605,496,25" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070" ToolTip="Pulse para consultar la funcionalidad de la aplicación">
+        <Button x:Name="btnInfo" Margin="79,617,953.6,37.4" RenderTransformOrigin="2.27,0.475" Height="36" Width="40.8" Click="btnInfo_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/ayuda.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070" ToolTip="Pulse si desea finalizar la aplicación" >
+        <Button x:Name="btnApagar" Margin="938,605,56,25" RenderTransformOrigin="0.5,0.5" Height="36" Width="40.8" Click="btnApagar_Click" BorderBrush="#00707070">
             <Button.Background>
                 <ImageBrush ImageSource="Images/apagar.png" 
                         Stretch="Uniform"/>
             </Button.Background>
         </Button>
-
+       
     </Grid>
 
     <Window.Resources>
@@ -266,6 +140,16 @@
         <Style TargetType="TextBox">
             <Setter Property="Background" Value="#7FFFFFFF"/>
             <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="ListBox">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Background" Value="#66080707"/>
+            <Setter Property="BorderBrush" Value="#FFFC0000"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="VerticalAlignment" Value="Stretch"/>
         </Style>
