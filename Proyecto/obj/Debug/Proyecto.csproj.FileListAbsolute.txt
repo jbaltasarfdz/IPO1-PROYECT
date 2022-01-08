@@ -86,3 +86,6 @@ C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\avisoWindow.g.c
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\avisoWindow.baml
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\padrinoWindow.g.cs
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\padrinoWindow.baml
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\Recursos\StringRecursos.en-UK.baml
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\Recursos\StringRecursos.es-ES.baml
+C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\obj\Debug\App.baml

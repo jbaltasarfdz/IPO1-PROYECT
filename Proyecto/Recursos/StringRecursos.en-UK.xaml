@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="lblLogin">Login</sys:String>
+    <sys:String x:Key="lblUsuario">User</sys:String>
+    <sys:String x:Key="lblContraseña">Password</sys:String>
+    <sys:String x:Key="btnLogin">Access</sys:String>
+    <sys:String x:Key="cbiEspaniol">SP</sys:String>
+    <sys:String x:Key="cbiIngles">ENG-UK</sys:String>
+
+    <sys:String x:Key="Enunciado">Access to Settings Window</sys:String>
+    <sys:String x:Key="Cancelado">Action was canceled.</sys:String>
+    <sys:String x:Key="Resultado">Result</sys:String>
+    <sys:String x:Key="UsuarioError">Incorrect user or password.</sys:String>
+    <sys:String x:Key="ErrorU">Login Error</sys:String>
+    <sys:String x:Key="Ajustes">Access to Settings Window, Do you wish to continue?</sys:String>
+    <sys:String x:Key="Gracias">Thanks for using our application...</sys:String>
+
+    <sys:String x:Key="IdiomaEspañol">Language selected: Spanish</sys:String>
+    <sys:String x:Key="IdiomaInglés">Language selected: English</sys:String>
+</ResourceDictionary>

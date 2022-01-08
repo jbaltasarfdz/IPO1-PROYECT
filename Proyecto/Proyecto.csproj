@@ -95,6 +95,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Recursos\StringRecursos.en-UK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Recursos\StringRecursos.es-ES.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="voluntarioWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -218,5 +226,12 @@
   <ItemGroup>
     <Resource Include="Images\Carlos.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\spain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\uk.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,35 +43,35 @@
                    RadiusX="5" RadiusY="5"  
                    />
 
-        <Label Content="Contraseña"  
+        <Label x:Name="lblContraseña" Content="{DynamicResource lblContraseña}"   
                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                Margin="443,173,274,269.4"  
                Foreground="White" 
                Height="28" Width="77" MinHeight="28" MinWidth="77"
                />
 
-        <Label Content="Inicia Sesión"  
+        <Label x:Name="lblLogin" Content="{DynamicResource lblLogin}" 
                HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                Margin="432,78,237,357.4" 
                Foreground="White" FontSize="18" FontFamily="Segoe UI Semibold" 
                Height="35" Width="125" MinHeight="35" MinWidth="125"
                />
 
-        <Label Content="Usuario"  
+        <Label x:Name="lblUsuario" Content="{DynamicResource lblUsuario}"   
                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                Margin="443,113,298,329.4" 
                Foreground="White" 
                Height="28" Width="53" MinHeight="28" MinWidth="53"
                />
-        
-        <Label Content="Adopta un Amigo" 
+
+        <Label x:Name="lblNombreEmpresa" Content="Adopta un Amigo" 
                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                Margin="108,258,527,178.4"  
                Foreground="White" FontFamily="Segoe UI Semibold" FontSize="18"  
                Height="34" Width="159" MinHeight="33" MinWidth="159"
                TextOptions.TextHintingMode="Fixed"  
                />
-        
+
         <TextBox x:Name="txtUsuario"  
                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                  Margin="443,142,172,297.4" 
@@ -91,7 +91,7 @@
             </TextBox.Text>
         </TextBox>
 
-        <Button x:Name="btnLogin" Content="Acceder"  
+        <Button x:Name="btnLogin" Content="{DynamicResource btnLogin}"   
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                 Margin="483,262,195,178.4"  
                 Click="btnLogin_Click"
@@ -126,5 +126,30 @@
                      PasswordChar="*"
                      ToolTip="Introduzca su contraseña"
                      />
+        <ComboBox x:Name="cbIdiomas" 
+            HorizontalAlignment="Right" VerticalAlignment="Top"
+            VerticalContentAlignment="Center"
+            Height="34" Width="94"
+            Margin="0,16,67,0" SelectionChanged="cbIdioma_CambioSeleccion">
+            <ComboBoxItem Name="cbiEspaniol" VerticalContentAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/spain.png" Width="15" Height="15"/>
+                    <TextBlock VerticalAlignment="Center" Text="{DynamicResource cbiEspaniol}" Margin="5,0" />
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Name="cbiIngles" VerticalContentAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/uk.png" Width="15" Height="15"/>
+                    <TextBlock VerticalAlignment="Center" Text="{DynamicResource cbiIngles}" Margin="5,0" />
+                </StackPanel>
+            </ComboBoxItem>
+
+        </ComboBox>
+        <Label x:Name="lblEstado" Content="Estado de la Aplicación" 
+               VerticalAlignment="Bottom"
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+               Margin="0,0,0,0.4"
+               Background="#FFF7F6F6" 
+               Opacity="0.3" FontWeight="Bold" Height="46"/>
     </Grid>
 </Window>

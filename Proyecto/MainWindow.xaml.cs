@@ -26,7 +26,7 @@ namespace Proyecto
         public MainWindow()
         {
             InitializeComponent();
-
+            App.DefineIdioma("es-ES");
         }
 
 
@@ -35,6 +35,7 @@ namespace Proyecto
         {
             if (e.Key == Key.Return)
             {
+                
                 //lblEstado.Content = "Se pulsó el enter ";
                 if (!String.IsNullOrEmpty(txtUsuario.Text)
                 && ComprobarEntrada(txtUsuario.Text, usuario,
@@ -77,8 +78,17 @@ namespace Proyecto
 
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
-            settingsWindow settingswindow = new settingsWindow();
-            settingswindow.Show();
+            if (MessageBox.Show((string)Resources["Ajustes"], (string)Resources["Enunciado"],
+                    MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                settingsWindow settingswindow = new settingsWindow();
+                settingswindow.Show();
+            }
+            else
+            {
+                MessageBox.Show((string)Resources["Cancelado"], (string)Resources["Resultado"], MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -87,11 +97,12 @@ namespace Proyecto
             
             if (txtUsuario.Text == usuario && txtContrasena.Password == password)
             {
+                MessageBox.Show((string)Resources["Gracias"]);
                 userwindow.Show();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecto", "Error en el login", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show((string)Resources["UsuarioError"], (string)Resources["ErrorU"], MessageBoxButton.OK, MessageBoxImage.Error);
                 txtUsuario.Clear();
                 txtContrasena.Clear();
                 
@@ -99,7 +110,25 @@ namespace Proyecto
             
         }
 
-
+        private void cbIdioma_CambioSeleccion(object sender, SelectionChangedEventArgs e)
+        {
+            string idioma = "";
+            string dic = "";
+            int cbi = cbIdiomas.SelectedIndex;
+            switch (cbi)
+            {
+                case 0:
+                    dic = "Español";
+                    idioma = "es-ES";
+                    break;
+                case 1:
+                    dic = "Inglés";
+                    idioma = "en-UK";
+                    break;
+            }
+            Resources.MergedDictionaries.Add(App.DefineIdioma(idioma));
+            lblEstado.Content = Resources["Idioma" + dic];
+        }
 
     }
 

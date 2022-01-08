@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Carlos\Documents\GitHub\IPO1-PROYECT\Proyecto\App.xaml
-8-288033136
+10-894008208
 
 18-587463374
 16-1920995550
-avisoWindow.xaml;padrinoWindow.xaml;voluntarioWindow.xaml;socioWindow.xaml;animalWindow.xaml;MainWindow.xaml;settingsWindow.xaml;userWindow.xaml;
+avisoWindow.xaml;padrinoWindow.xaml;Recursos\StringRecursos.en-UK.xaml;Recursos\StringRecursos.es-ES.xaml;voluntarioWindow.xaml;socioWindow.xaml;animalWindow.xaml;MainWindow.xaml;settingsWindow.xaml;userWindow.xaml;
 
 False
 
