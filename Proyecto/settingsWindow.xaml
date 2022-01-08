@@ -5,28 +5,69 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto"
         mc:Ignorable="d"
-        Title="Adopta un Amigo - Ajustes" Height="450" Width="800">
+        Title="Adopta un Amigo - Ajustes" Height="450" Width="800" WindowState="Maximized" ResizeMode="CanResize" MinHeight="450" MinWidth="800">
     <Grid>
-  
-        <Label x:Name="lblVentanaAjustes" Content="Ajustes de la aplicación" Margin="361,22,291.6,0" VerticalAlignment="Top"/>
-        
-        <Label x:Name="lblIdioma" Content="Idioma" Margin="78,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/fondo_ajustes.jpg"/>
+        </Grid.Background>
 
-        <Label Content="Color" HorizontalAlignment="Left" Margin="86,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.256,0.398"/>
+        <Label x:Name="lblVentanaAjustes" Content="Ajustes de la aplicación" 
+               Margin="0,10,-0.4,344" 
+               FontSize="30" FontWeight="ExtraBold" FontStyle="Italic"
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
-        <Label Content="Tamaño de letra" HorizontalAlignment="Left" Margin="86,158,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblIdioma" Content="Idioma" 
+               Margin="57,81,533.6,305" 
+               Height="34.4" Width="203.2"/>
 
-        <Label Content="Seleccione el idioma en el que se desea visualizar el contenido de la aplicación" HorizontalAlignment="Left" Margin="329,73,0,0" VerticalAlignment="Top" Height="52"/>
-        
-        <Label Content="Si tiene alguna discapacidad visual, selecciónela y la aplicación se adaptará&#xD;&#xA;a sus capacidades" HorizontalAlignment="Left" Margin="300,280,0,0" VerticalAlignment="Top" Height="53" Width="426"/>
-        
-        <Label Content="Seleccione el tamaño de letra con el que desee visualizar la aplicación" HorizontalAlignment="Left" Margin="329,189,0,0" VerticalAlignment="Top" Height="53" Width="426"/>
+        <Label x:Name="lblDiscapacidad" Content="Discapacidad"  
+               Margin="57,264,533.6,122" 
+               Height="34.4" Width="203.2"/>
 
-        <ComboBox x:Name="cmbIdioma" HorizontalAlignment="Left" Margin="78,73,0,0" VerticalAlignment="Top" Width="182"/>
-        
-        <ComboBox x:Name="cmbColor" HorizontalAlignment="Left" Margin="78,280,0,0" VerticalAlignment="Top" Width="182"/>
-       
-        <ComboBox x:Name="cmbTamañoLetra" HorizontalAlignment="Left" Margin="78,189,0,0" VerticalAlignment="Top" Width="182"/>
-        
+        <Label x:Name="lblTamaño" Content="Tamaño de letra" 
+               Margin="57,169,533.6,217"
+               Height="34.4" Width="203.2"/>
+
+        <ComboBox x:Name="cmbIdioma" 
+                  Margin="78,115,533.6,285" 
+                  Height="22.4" Width="182" MinHeight="22.4" MinWidth="182"/>
+
+        <ComboBox x:Name="cmbColor"
+                  Margin="78,298,533.6,99" 
+                  Height="22.4" Width="182" MinHeight="22.4" MinWidth="182"/>
+
+        <ComboBox x:Name="cmbTamañoLetra" 
+                  Margin="78,203,533.6,194" 
+                  Height="22.4" Width="182" MinHeight="22.4" MinWidth="182"/>
+
+        <Label Content="En caso de tener alguna discapacidad visual,&#x0a;selecciónela y la aplicación se adaptará a sus necesidades." 
+                Height="62" Margin="291,274,18.6,84"  Width="484"/>
+
+        <Label Content="Seleccione el idioma en el que se desea visualizar&#x0a;el contenido de la aplicación." 
+                Height="62" Margin="291,91,18.6,267"  Width="484"/>
+
+        <Label Content="Seleccione el tamaño de letra con el que desea&#x0a;que se visualice la aplicación."
+                Height="62" Margin="291,179,18.6,179"  Width="484"/>
+
     </Grid>
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+    </Window.Resources>
 </Window>
