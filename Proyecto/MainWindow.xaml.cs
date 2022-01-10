@@ -36,7 +36,6 @@ namespace Proyecto
             if (e.Key == Key.Return)
             {
                 
-                //lblEstado.Content = "Se pulsó el enter ";
                 if (!String.IsNullOrEmpty(txtUsuario.Text)
                 && ComprobarEntrada(txtUsuario.Text, usuario,
                 txtUsuario))
